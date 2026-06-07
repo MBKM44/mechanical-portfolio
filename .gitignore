@@ -1,0 +1,32 @@
+# Dependencies and build output
+node_modules/
+dist/
+.vite/
+
+# Local environment files
+.env
+.env.*
+!.env.example
+
+# CAD/source design files should stay private
+03_CAD_Originals_Do_Not_Upload/
+*.step
+*.stp
+*.dwg
+*.dwl
+*.dwl2
+*.ipt
+*.iam
+
+# Local staging folders copied into the clean website structure
+01_CV/
+02_Project_Info/
+04_3D_Models_For_Web/
+05_Images_Renders/
+06_Videos/
+07_Notes_For_Codex/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+*.log
