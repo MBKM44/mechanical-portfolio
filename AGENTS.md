@@ -19,14 +19,16 @@ Avoid adding a large framework unless the site grows beyond a single-page portfo
 
 ## Content Rules
 
-- Do not reference STEP, STP, DWG, IPT, IAM, or source CAD files from the public website.
+- Do not reference STEP, STP, DWG, IPT, IAM, SLDPRT, SLDASM, F3D, or source CAD files from the public website.
 - Keep public web models in `public/models/`.
 - Keep the CV in `public/cv/`.
-- Keep future renders/videos in `public/media/`.
+- Keep future optional renders/images in `public/media/`.
+- Do not add empty video slots or placeholder media blocks after project viewers.
 - Keep Oil Palm Rover out of the visible project list until a web-ready model or strong visual asset exists.
 - Preserve the AWH relationship:
-  - OLD AWH = early low-scale prototype
-  - NEW AWH = improved/upscaled design
+  - Atmospheric Water Harvesting Prototype V1 = early low-scale proof-of-concept
+  - Atmospheric Water Harvesting System V2 = improved higher-scale design
+  - Do not make V1 sound failed or disposable.
 
 ## Design Rules
 
@@ -42,6 +44,6 @@ Before handing off changes:
 
 1. Run `npm run build`.
 2. Run or preview the site locally.
-3. Confirm all three model viewers load or show the intended fallback.
+3. Confirm all four model viewers load or show the intended fallback.
 4. Confirm the CV download link points to `public/cv/CV-Mubarak-Al-Hamadi.pdf`.
 5. Confirm no private CAD/source files were moved into `public/`.

@@ -1,14 +1,15 @@
 # Mechanical Engineering Portfolio
 
-First working version of Mubarak Al Hamadi's mechanical engineering portfolio website.
+Submission-ready version of Mubarak Al Hamadi's mechanical engineering portfolio website.
 
 The site is a static Vite + TypeScript portfolio using `<model-viewer>` for browser-based GLB inspection. It is prepared for free deployment through GitHub Pages.
 
 ## Included Projects
 
-- OLD Atmospheric Water Harvesting System - early low-scale prototype
-- NEW Atmospheric Water Harvesting System - improved and upscaled AWH design
+- Atmospheric Water Harvesting Prototype V1 - early low-scale proof-of-concept
+- Atmospheric Water Harvesting System V2 - improved and higher-scale AWH design
 - 6-DOF Exoskeleton - mechanical/mechatronics rehabilitation prototype
+- Suspension Design - front double-wishbone suspension CAD assembly
 
 Oil Palm Rover is intentionally not included yet because no web-ready CAD/GLB is currently available for it.
 
@@ -19,11 +20,12 @@ public/
   cv/
     CV-Mubarak-Al-Hamadi.pdf
   media/
-    Put future renders, images, and videos here
+    Put future optional renders or images here
   models/
     old-awh-system.glb
     new-awh-system.glb
     exoskeleton.glb
+    suspension-design.glb
 src/
   content/
     projects.ts
@@ -32,7 +34,7 @@ src/
 .github/workflows/deploy.yml
 ```
 
-Source CAD files and original staging folders are ignored through `.gitignore` so STEP, STP, DWG, IPT, IAM, and other private design files are not deployed accidentally.
+Source CAD files and original staging folders are ignored through `.gitignore` so STEP, STP, DWG, IPT, IAM, SLDPRT, SLDASM, F3D, and other private design files are not deployed accidentally.
 
 ## Local Development
 
@@ -74,7 +76,7 @@ The Vite config uses `base: "./"` so the site works on GitHub Pages project URLs
 
 - Edit project copy, tools, metrics, and model paths in `src/content/projects.ts`.
 - Replace public GLB files in `public/models/` using the existing filenames, or update the matching `modelFile` value.
-- Add future project renders and videos to `public/media/`.
+- Add future project renders or still images to `public/media/`.
 - Replace the CV at `public/cv/CV-Mubarak-Al-Hamadi.pdf` when needed.
 
 ## 3D Viewer Notes

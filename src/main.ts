@@ -97,15 +97,12 @@ const renderProjectDetail = (project: Project, index: number) => `
 
       <div class="project-media">
         ${renderModelViewer(project)}
-        <div class="media-reserve">
-          <span>Render / video area</span>
-        </div>
       </div>
     </div>
 
     <div class="container project-tools">
       <div>
-        <h3>Designed and Contributed</h3>
+        <h3>Design Contribution</h3>
         <ul>${renderList(project.contributions)}</ul>
       </div>
       <div>
@@ -140,9 +137,9 @@ app.innerHTML = `
         <p class="eyebrow">Mechanical Engineer | CAD, Prototyping, Simulation, Mechatronics</p>
         <h1 id="hero-title">Mubarak Al Hamadi</h1>
         <p>
-          I design and test mechanical systems that move from CAD to working prototypes:
-          atmospheric water harvesting hardware, rehabilitation exoskeletons, sensor-driven
-          testing, and field-ready engineering documentation.
+          Mechanical engineering portfolio focused on CAD assemblies, prototype thinking,
+          thermal systems, suspension design, mechatronics, testing, and practical
+          engineering documentation.
         </p>
         <div class="hero-actions">
           <a class="button button-primary" href="#projects">View projects</a>
@@ -177,8 +174,8 @@ app.innerHTML = `
         <p class="eyebrow">Selected work</p>
         <h2>Engineering projects with browser-based 3D model inspection.</h2>
         <p>
-          The AWH projects are shown as a progression: the OLD AWH is the early low-scale
-          prototype, and the NEW AWH is the improved upscaled design.
+          Four selected projects showing mechanical design, system iteration, prototype
+          validation, and interactive GLB model viewing without CAD software.
         </p>
       </div>
       <div class="container project-card-grid">
@@ -190,28 +187,29 @@ app.innerHTML = `
       <div class="container progression-layout">
         <div>
           <p class="eyebrow">Design progression</p>
-          <h2 id="progression-title">From first-generation prototype to improved AWH system.</h2>
+          <h2 id="progression-title">Atmospheric water harvesting, from V1 proof-of-concept to V2 system design.</h2>
           <p>
-            The atmospheric water harvesting work is presented as an engineering iteration,
-            not two disconnected projects. The older model shows the first validation package;
-            the newer model shows the scaled response to what testing revealed.
+            Atmospheric water harvesting extracts water from humid air. In hot, arid
+            environments, low humidity and high temperature make condensation harder, so the
+            design combines air handling, cooling, sorbent-assisted capture, sensors, and
+            testing to evaluate real performance.
           </p>
         </div>
         <ol class="progression-steps">
           <li>
             <span>01</span>
-            <strong>Prototype</strong>
-            <p>Prove the hybrid AWH architecture at a low scale.</p>
+            <strong>V1 Prototype</strong>
+            <p>Proved the compact hybrid architecture at low scale.</p>
           </li>
           <li>
             <span>02</span>
-            <strong>Test</strong>
-            <p>Measure yield, energy, airflow behavior, and monitoring reliability.</p>
+            <strong>Testing</strong>
+            <p>Measured yield, energy use, airflow behavior, and monitoring reliability.</p>
           </li>
           <li>
             <span>03</span>
-            <strong>Upscale</strong>
-            <p>Improve packaging, serviceability, airflow distribution, and research capacity.</p>
+            <strong>V2 System</strong>
+            <p>Improved scale, serviceability, airflow distribution, and research capacity.</p>
           </li>
         </ol>
       </div>

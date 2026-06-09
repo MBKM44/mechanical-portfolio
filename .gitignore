@@ -17,6 +17,16 @@ dist/
 *.dwl2
 *.ipt
 *.iam
+*.sldprt
+*.sldasm
+*.slddrw
+*.f3d
+*.x_t
+*.x_b
+*.iges
+*.igs
+*.sat
+*.3dm
 
 # Local staging folders copied into the clean website structure
 01_CV/

@@ -1,0 +1,913 @@
+
+
+===== PAGE 1 =====
+Journal of Applied Mechanics, vol. 35, pp. 379-386, 1968 
+J. R. RICE 
+A Path Independent Integral and the 
+Approximate Analysis of Strain Concentration 
+by Notches and Cracks 
+Assistant Professor of Engineering, 
+Brown Univenity, 
+Providence, R. I. A line integral is exhibited which has the same value for all paths surrounding the tip of 
+a notch in the two-dimensional strain field of an elastic or deformation-type elastic-plastic 
+material. Appropriate integration path' choices serye bOlh to relate Ihe integral to the 
+near tip deformatiot~s and, in many cases. to permit its direct e:tlalutllion. This (l.t'eraged 
+measure of the near tip field leads to approximate solutions for several strain-collcen/rel­
+tion problems. Contained perfectly plastic deformation near a crack tip is analy:.ed for 
+tile plane-strain case with the aid of the slip-line theory. Near tip stresses are shown to 
+be significantly elet1ated by hydrostatic tension. and a strain singularity results varying 
+;Ilt/erseiy u,ith distance from the tip ilt centered fan above and below the tip. 
+A pproximate estimates are given for the strain intensity~ plastic zone size. and crack tip 
+opening displacement, and the important role of large geometry changes in crack blunli1Jg 
+is noted. A nother application leads to a general solution for crack tip separations in 
+the Barenblatt-Dugdale crack model. A proof follows on the equivalence Ike 
+Grijfil.k energy balance and cohesive force theories of elastic brittle fracture, and lu!jrdent1it9 
+behavior is included in a model for plane"stress A final application 
+fo approximate estimates of sHain (;Oncentrations at smooth-ended notch tips in elastic 
+and elastic-plastic materials. 
+Introduction 
+CONSIDERABLE mathematical difficulties accompany 
+the determination of concentrated strain fields near notches and 
+cracks, especially in nonlinear materials. An approximate 
+analysis of a variety of strain-ooncentration problems is carried 
+out here through a method which bypasses this detailed solution 
+of boundary-value problems. The approach is first to identify a 
+line integral which has the same value for all integration paths 
+surrounding a class of notch tips in two-dimensional deformation 
+fields of linear or nonlinear elastic materials. The choice of a 
+near tip path directly relates the integral to the locally concen­
+trated strain field. But alternate choices (or the path often per­
+mit a direct evaluation of the integral. This knowledge of an 
+averaged value for the locally concentrated strain field is the 
+starting point in the analysis of several notch and crack problems 
+discussed in subsequent sections. 
+All results are either approximate or exact in limiting cases. 
+The approximations suffer from a. lack of means for estimating 
+errors or two-sided bounds, although lower bounds. on strain 
+magnitudes may sometimes be established. The primary interest 
+in discussing nonlinear materials lies with eiastic·plastic behavior 
+in metals, particularJy in relation to fracture. This behavior is 
+best modeled through incremental stress-strain relations. But 
+no success has been met in formulating a path integral for 
+incremental plasticity analogous to that presented here for elastic 
+materials. Thus a udeformation" plasticity theory is employed 
+and the phrase ftelastic-plastic material" when used here will be 
+understood as denoting a nonlinear elastic material exhibiting a 
+wear Hookean response for stress states within a yield surface 
+anq a nonlinear hardening response for those outside. 
+Contributed by the Applied Mechanics Division and presented 
+at the Applied Mechanics Conference. Providence, R. I.t June 12-14. 
+1968, of THE AMElUCAN SOCIETY OF MECII.ANIOAL ENGINEERS. 
+Discussion of this paper should be addressed to the Editorial De­
+p"artment. ASME, United Engineering Center. 345 East 47th Street. 
+New York. N. Y. 10011, and will be accepted u;ttU July 16. 1968. 
+Discussion received alter the closing date will be returned. Manu­
+script rec!3ived by AS~E Applied Mechanics Division, May 22, 1967; 
+final draft, March 5, 1968. Paper No. 68-APM-31. 
+Journal of Applied Mecbanics 
+-
+F.... 1 . Flat surfaced notch In twMlmen.lonal d"orma­
+tlon ftekl (aU ......... depend only on 11 and y). r Is any 
+curve surrounding the notch tip, r I denot.. the curved 
+notch tip. 
+Path Independent J ." ...... 1. Consider a homogeneous body of 
+linear or nonlinear elastic material free of body forces and sub­
+jected to a two-dimensional deformation field (plane strain, gen­
+eralized plane stress, antiplane strain) so that all stresses tTiJ de­
+pend only on two Cartesian coordinates Zl( - :c) and %t('= 1/). 
+Suppose the body contains a notch of the type shown in Fig. 1, 
+having Hat surfaces parallel to the z-axis and a rounded tip de­
+noted by the arc r p A straight crack is a limiting case. Define 
+the strain-energy W by 
+W .= W(z,1/) = W(e):= 1:
+1 
+(1) 
+where £ = [Eil} is the infinitesimal strain tensor. Now consider 
+the integral J defined by 
+J - J: (Wdll - T.~: dB)' (2) 
+Here r is a curve surrounding .the notch tip, the integral being 
+evaluated in a oontraclockwise sense starting from the lower Hat 
+notch surface and continuing along the path r to the upper Hat 
+surface. T is the traction vector defined to the out;. 
+ward normal along r, T, - tTunjJ U is the displacement vector, 
+and d8 is an element of arc length along r. To prove path inde­
+pendent, consider any closed curve r* enclosing an area A· in a 
+J U N E 1 96 8 I 319 
+
+
+===== PAGE 2 =====
+two-dimensional deformation field free of body forces. An ap­
+plication of Green's theorem II] 1 gives 
+i. (Wd Y - T, :i cis) 
+- fA. [~: - ~J (~ii :') ] dxdy . 
+Differentiating the strain-energy densit.y, 
+~W ~W ?JEiJ ~Ei; 
+- = -.- = ~i'-
+C>x ~E I'j ()x ()x {by equation (1)] 
+I [0 (em,) 0 (em,)] = '2 uii Ox ox; +?lx ()x: 
+° (OU') = "ii Ox
+i 
+Ox' (since" ii = (T ji) 
+() ( OU) = ox, . "if Ox' since --'} = 0 ( 
+()(T .. ) 
+ox, 
+(Sa) 
+(3b) 
+The area integral in equation (3a) vanishes identically, and thus 
+f (WdY - T.
+OU 
+cis) = 0 JJr. ox 
+for any closed curve r*. (3e) 
+Consider any two paths fl and r~ surrounding the notch tip, as 
+does r in Fig. 1. Traverse r l in the contraclockwise sense, 
+continue along the upper flat notch surface to where f2 intersects 
+the notch, traverse 1'2 in the clockwise sense, and then continue 
+along the lower fiat notch surface to the starting point where fl 
+intersects the notch. This describes a closed contour so that the 
+integral of Wdy - T· (ou/()x)cis vanishes. But T = 0 and dy = 0 
+on the portions of path along the flat notch surfaces. Thus the 
+integral along r1 contraclockwise and the integral along rt clock­
+wise sum to zero. J has the same value when computed by in­
+tegrating along either Pl or f 2, and path independent is proven. 
+We assume, of course, that the area between curves PI and fl is 
+free of singularities. 
+Clearly, by taking r close to the notch tip we can make the 
+integral depend only On . the local field. In particular, the path 
+may be shrunk to the tip r, (Fig. 1) of a smooth-ended notch and 
+since T = 0 there, 
+J = f Wdy 
+Jr, 
+(4) 
+so tha.t J is an averaged measure of the strain on the notch tip. 
+The limit is not meaningful for a sharp crack. Nevertheless, since 
+an arbitrarily small curve r may then be chosen surrounding the 
+tip, the integral may be made to depend only on the crack tip 
+singularity in the deformation field. The utility of the method 
+rests in the fact that alternate choices of integration paths often 
+permit a direct evaluation of J. These are discussed in the next 
+section, along with an energy-rate interpretation of the integral 
+generalizing work by Irwin [2) for linear behavior. The J inte­
+gral is identical in form to a static component of the Clenergy­
+momentum tensor" introduced by Eshelby I3} to characterize 
+generalized forces on dislocations and point defects in elastic 
+fields. 
+Evaluation of the J Integral 
+Two Special Conftguratlons. The J integral may be evaluated 
+almost by inspection for the configurations shown in Fig. 2. 
+These are not of great practical interest, but are useful in il­
+lustrating the relation to potential energy rates. In Fig. 2(a), a 
+semi-infinite flat-surfaced notch in an infinite strip of height ~ 
+loads are applied by clamping the upper and lower surfaces of the 
+strip so that the displacement vector u is constant on each 
+1 Numbers in brackets designate References at end of paper. 
+380 / J U N E 1 9 6 8 
+J[/J:rJ::~::: ::/,:~ :t:~;:: t
+Jr: J11 
+CLAMPED BOUNDARIES, U IS CONSTANT 
+(0) 
+• x 
+(b) 
+Fig. 2 Two .peclal conftguratlons for which the path Independent Inte­
+gral J Is readily evaluated on the dashed-line paths r shown. Intlnite 
+strip. with seml-Intlnite notches. (0) Constant displacements imposed 
+by clamping boundaries, and (6) pure bending of beamlfke arms. 
+clamped boundary. Take r to be the dashed curve shown 
+which stretches out to x == ± 00. There is no contribution to J 
+from the portion of r along the clamped boundaries since dy = 0 
+and ()ujox = 0 there. Also at x = - 00, lV = 0 and ()ujox = O. 
+The entire contribution to J comes from the portion of r at x = 
++ (X) 1 and since ()u/~ == 0 there, 
+J == W",h (5) 
+where W '" is the constant strain-energy density at x = + co. 
+Now consider the similar configuration in Fig. 2(b), with loads 
+applied by couples M per unit thickness on the beamlike arms so 
+a state of pure bending (all stresses vanishing except (Tu) results 
+at x = - (XI. For the contour r shown by the dashed line, no con­
+tribution to J occurs at x = + (X) as Wand T vanish there, and 
+no contribution occurs for portions of r along the upper and 
+lower surfaces of the strip as dy and T vanish. Thus J is given by 
+the integral across the beam arms at z = - (X) and on this por­
+tion of r, dy = -cis, T" = 0, and Ts = -€Tu . We end up 
+integrating 
+(60) 
+across the two beam arms, where n is the complementary energy 
+density. Thus, letting n6(M) be the complementary energy per 
+unit length of beam arm per unit thickness for a state of pure 
+bending under moment per unit thickness M, 
+J.".2{MM). (ab) 
+Small Seal. Ylefdlngln Elastk-Pla.tk Materials. Consider a narrow 
+notch or crack in a body loaded so 88 to induce a yielded zone 
+near the tip that is small in size compared to geometric dimen­
+sions such as notch length, unnotched specimen width, and so on. 
+The situation envisioned has been termed Hsmall-scale yielding," 
+and a boundary-layer style formulation of the problem [4] is 
+profitably employed to discuss the limiting case, The essential 
+ideas are illustrated with reference to Fig. 3. Loadings sym­
+metrical about the narrow notch art> imagined to induce a deforma­
+tion state of plane strain. First, consider the linear elastic solu­
+tion of the problem when the notch is presumed to be a sharp 
+crack. Employing polar coordinates r, 8 with origin at the crack 
+tipt the form of stresseS in the vicinity of the tip are known [2, 51 
+to exhibit a characteristic inverse square-root dependence on r: 
+Kt 
+uii = (27rT)1IJij(8) 
++ other terms which a.re bounded at the crack tip. (7a) 
+Here KI is the stress intensity factor and the set of functions 
+f'i(8) are the same for all symmetrically loaded crack problems. 
+For an isotropic material 
+Transactions of the ASME 
+
+
+===== PAGE 3 =====
+y 
+x 
+PLASTIC --2Ott£ 
+AS r ... IX) 
+(0) (b) 
+fig.3 (a) Small-scale yielding near a narrow notch or crack In an elastlc­
+plastic material. (II) The actual configuration II replaced by a .emi­
+infinite notch or crack In an infinite Itody; actual boundary conditions are 
+replaced by the requirement of an asymptotic approach to the Unear 
+elaltie crack lip singularity streu fleld. 
+cos (8/2)[1 - sin (8/2) sin (38/2)1 
+f llll (8) cos (8/2)[1 + sin (8/2) sin (30/2)} (7b) 
+!ZII«(J} = f llz(8) = sin (6/2) cos (0/2) cos (38/2). 
+Now suppose the material is elastic-plastic and the load level is 
+sufficiently small so that a yield zone forms near the tip which is 
+small compared to notch length and similar characteristic dimen­
+sions (small-scale yielding, Fig. 3Ca». One anticipates that the 
+elastic singularity governs stresses at distances from the notch 
+root that are large compared to yield zone and root radius dimen­
+sions but still small compared to characteristic geometric dimen­
+sions such as notch length. The actual configuration in Fig. 3(a) 
+is then replaced by the simpler semi-infinite notch in an infinite 
+body, Fig. 3(b), and a boundary-layer approach is employed re­
+placing actu~.l boundary conditions in Fig. 3(a) with the asymp­
+totic boundary conditions 
+KI 
+CTii - (21rr)1/J,j(8) asT-CO, (7c) 
+where KI is the stress intensity factor from the linear elastic 
+crack solution. 
+Such boundary-layer solutions for cracks are mathematically 
+exact in the plastic region only to the first nonvanishing term of a 
+Taylor expansion of complete solutions in the applied load. But 
+comparison [4] with available complete solutions indicates the 
+boundary-layer approach to be a highly accurate approximation 
+up to substantial fractions (typically, one half) of net section 
+yielding load levels. We now evaluate the integral J from the 
+boundary-layer solution, taking r to be a large circle of radius r 
+in Fig. 3(b): 
+f
++r [ ()u ] J = r -r (W(T, 8) cos 8 - T(r, 8).~ (r,8) dO. (Sa) 
+By path independence we may let r -+ co and since W is quadratic 
+in strain in the elastic region, only the asymptotically approached 
+inverse square-root elastic-stress field contributes. Working out 
+the associated plane-strain deformation field, one finds 
+J = 1 - Vi K; 
+E for small scale yielding, 
+where E is Young's modulus and v Poisson's ratio. 
+(8b) 
+Primarily, we will later deal with one configuration, the narrow 
+notch or crack of length 2a in a remotely uniform stress field CToo, 
+Fig. 4. Here [2J 
+and 
+for small-scale yielding (9) 
+Journal Dt Applied Mechanics 
+For plane stress, the same result holds for J with 1 - ,,1 replaced 
+by unity. The same computation may be carried out for more 
+general loadings. Letting KI, Ku, and KIll be elastic stress-in­
+tensity factors [2] for the opening, in-plane sliding, and antiplane 
+sliding modes, respectively, of notch tip deformation one readily 
+obtains 
+1 - 1'1 ttl + V t 
+J ... ~ (KI + Kn) + ~KJII 
+(small-scale yielding) (10) 
+Interpretallon In Terms of Energy Comparisons for Notche. of Neighbor­
+Ing Sin. Let A I denote the cross section and r' the bounding 
+curve of a two-dimensional elastic body. The potential energy 
+per unit thickness is defined as 
+P = f Wdxdy - f T·uds, 
+A' Jr' 
+(il) 
+where r' is that portion of r' on which tractions T are prescribed. 
+Let P(l} denote the potential energy of such a body containing a 
+flat-Burfaced notch as in Fig. 1 with tip at z = l. We compare 
+this with the energy P(l + al) of an identically loaded body which 
+is similar in every respect except that the notch is now at x = i 
++ al, the shape of the curved tip r, being the same in both cases. 
+Then one may show that 
+J = _ lim pel + al) - P(l) = _ OP (12) 
+~-o az ()l' 
+the rate of decrease of potential energy with respect to notch size. 
+The proof is lengthy and thus deferred for brevity to a section of 
+a forthcoming treatise chapter [6]. Equations just mentioned 
+provide a check. For loading by imposed displacements only 
+as in Fig. 2(a), the potential energy equals the strain energy so 
+that equation (5) results. Similarly, the potential energy equals 
+minus the complementary energy for loading by tractions only as 
+in Fig. 2(b), 80 that equation (66) results. Equation (10) is the 
+linear elastic energy-release rate given by Irwin [21, and reflects 
+the fact that a small nonlinear zone at a notch tip negligibly 
+affects the overall compliance of a notched body. 
+In view of the energy-rate interpretation of J and its alternate 
+relation to the near tip deformation fieldJ the present work pro­
+vides a generalization of the connection between crack-tip stress­
+intensity factors and energy fates noted by Irwin for linear ma­
+terials. Further, J. W. Hutchinson has noted in a private commu­
+nication that an energy-rate line integral proposed by Sanders [71 
+for linear elasticity may be rearranged so as to coincide with the J 
+integral form. The connection between energy rates and locally 
+concentrated strains on a sIDooth-ended notch tip, as in equations 
+(4) and (12), has been noted first by Thomas [8] and later by 
+Rice and Drucker [9] and Bowie and Neal [lOJ. Since subse­
+quent results on strain concentrations will be given in terms of J, 
+means for its determination in cases other than those represented 
+by equations (5)-(10) are useful. The energy-rate interpretation 
+is pertinent here. In particular, the compliance testing method 
+of elastic fracture mechanics [2} is directly extendable through 
+equation (12) to nonlinear materials. Also, highly approximate 
+analyses may be employed since only overall compliance changes 
+enter the determination of J. For example, the Dugdale model 
+fig. 4 Narrow notch or crack of length 20 In Infinite body; 
+uniform remote ,frets Ua> 
+J U N E 1 9 68 I 381 
+
+
+===== PAGE 4 =====
+discussed next or simple an tiplane strain calculations 111] may 
+be employed to estimate the deviation of J from its linear elastic 
+value in problems dealing with large-scale plastic yielding near a 
+notch. Once having determined J (approximately), the model 
+may be ignored and methods· of the next sections employed to 
+discuss local strain concentrations. Such estimates of J are 
+given in reference [6J for the two models just noted. As antici­
+pated, deviations from the linear elastic value show little sensi­
+tivity to the particular model employed. 
+Perfectly Plastic Plane-Strain Yielding al a Crack Tip 
+A13 a first application we consider the plane-strain problem of 
+contained plastic deformation near a crack up in anonhardening 
+material. Behavior is idealized as linear elastic until the princi­
+pal in-plane shear stress reaches a yield value T y, at which un­
+restricted further deformation may occur with no increase in 
+shear stress. This conveniently permits utilization of the slip­
+line theory [12] in plastic regions. The idealization is rigorously 
+correct for an isotropic nonhardening material exhibiting elastic 
+as well as plastic incompressibility. Elastically compressible 
+materials approach a constant in-plane shear stress in plastic 
+regions when plastic strains are somewhat in excess of initial yield 
+values, as anticipated in the near crack tip region. Constancy of 
+the J integral requires a displacement gradient singularity at the 
+crack t.ip since stresses are bounded and the path may be shrunk 
+to zero length. Thus we construct a near tip stress state satisfy­
+ing the yield condition and varying only with the polar angle O. 
+The slip lines of this field are shown in Fig. 5. Traction-free 
+boundary conditions require yield in uniaxial tension along the 
+crack line and the 45-deg slip lines carry this str~ state into the 
+isosceles right triangle A: 
+(T fill = (T:l1I == 0 (region A) (13a) 
+Any slip line of region A finding its way to the x-axis in front of 
+the crack must swing through an angle of 11"/2. The accompany­
+ing hydrostatic stress elevation [12} and 45-deg slip lines deter­
+mine the constant stress state 
+(Tn = 1rTy, (T IIfI = (2 + 1r)TYI 
+(TZII = 0 (region B) (13b) 
+in the diamond-shaped region ahead of the crack. A centered fan 
+must join two such regions of constant stress, and in the fan 
+(Trr = (f88 = (1 + 3;) Ty - 28T y , 
+Urf = Ty (region C) (13c) 
+This stress field is familiar in the limit analysis of double-edge 
+notched thick plates [13]. It is emphasized that the boundary 
+of the slip-line field in Fig. 5 is not intended to represent the 
+elastic-plastic boundary. 
+Large strains can occur only when slip lines focus, as in the 
+centered fans, but not in constant stress regions (A and B) unless 
+strains are uniformly large along the straight slip lines and thus 
+y 
+CRACK 
+fig. 5 perfectly plaltlc plan .. ,traJn IUpailn. ftelcl at a crack tipJ constanl 
+,tre .. retlonl A. and B lolned by cenl.red fan C 
+·382 / J U N E 1 9 6 8 
+out toward the elastic-plastic boundary (where strains must be 
+small), One then anticipates strains on the order of initial yield 
+values in the constant stress regions. Only the strain singularity 
+in the centered fan enters the results toward which we are head· 
+ing. Assume elastic incompressibility for the moment, and that 
+principal stress and strain directions coincide. Then EN' = E8& = 0 
+in the fan and displacements are thus representable in the form 
+u" = f'(O), ·U/I = -f(O) + g(r}, 
+where g(O) = 1(1r /4) = 0 (14«) 
+These equations apply to velocities (12] rather than displacements 
+in a proper incremental theory. The nonvanishing strain com­
+ponent in the fan is 
+1 C>u" C>u/l U/I 
+'Yr' = -;: be + Or - -;: 
+1 == - [1'(0) + 1(0) + rg'(r) - g(T)] (14b) 
+r 
+Now consider the path independent integral J (which was 
+discovered as an extension of work directed toward establishing 
+the strength of the 'Y rf singularity in this problem). Taking r as 
+a circle of radius r centered at the crack tip and employing polar 
+components, 
+J = r J: .. {w cos 8 -<Trr [Err COS 0 - (i 'Yrf - W ) sin 8] 
+- (Trf [( -i 'Yrf + w) cos 8 - EBB sin OJ} dO (15) 
+Here w is the rotation, measured positive contraclockwise. We 
+evaluate the integral by letting r - 0, 80 that only the portion 
+of the integral over the centered fans contribute. The near tip 
+stress state is given by equations (13). Limiting forms of strain, 
+rotation, and energy density in the fan C are now given. Note 
+that gl(O) exists since it is proportional to the finite extensional 
+strain resulting as the tip is approached along the positive x axis, 
+and is thus the limit of g(r)/r. Thus 
+R(O) 
+'Y,.8 - 'YY -r- as r - 0 in C, (16a) 
+from equation (14b). Here 'Yy = Ty/G is the initial yield strain 
+in shear, and the function R(8) is defined so that 
+'YyR(8) ==1'(0) + f(O) (16b) 
+Note that if g(r) was a linear function of r throughout the plastic 
+zone instead of just near the tip and if the straight fan line ex­
+tended to the elastic-plastic boundary, then (16a) would be an 
+equality throughout the zone and R(O) would be the distance to 
+the elastic-plastic boundary along a ray at angle O. Thus we 
+interpret R(O) as an approximate indication of the extent of the 
+plastica.1ly strained region. The rotation w may be shown to 
+approach -'Y~/2 as r - O. The energy density appropriate to 
+an incompressible nonhardening material is 
+{
+¥i'Y2 
+W = jT('Y)d,,( = .!fl t 
+Ty'Y -2~'Yy 
+if'Y < 'Yy 
+if'Y > 'Yy 
+(l7a) 
+where 'Y is the principal resolved in-plane shear strain. Thus 
+R(B) 
+W -Ty'Yy-­r as r- 0 in C. (l7b) 
+While it was simplest to perform calculations for an incompress­
+ible material, one may show that the asymptotic form for 'Y .. in 
+equation (16a) as well as all subsequent formulas in this section 
+apply also to an elastically compressible material. 
+The average value of R(O) is now determined in terms of J by 
+letting T- 0 in equation (15~, resUlting in 
+Transactions of the ASME 
+
+
+===== PAGE 5 =====
+J == 2Ty"'(y I3w-/4 R(6) f cos 0 + (1 + 3; -26) sin 0] dO. 
+w/4 L 
+(18) 
+Another useful form results by solving for displacements as r - 0 
+in the fan. Converting equations (14a) to Cartesian components 
+and employing equation (16b), one finds 
+uti -.. "'(y fe R{O) sin OdO, u~ - "'(y Ie R(fJ) cos OdD 
+J 7/4 w/4 
+as r -.. 0 in C. (19a) 
+An integration by parts in equation (18) then leads to 
+f
+3r/ 4 
+J = 2Ty 'U1I(t})(3 + ctn· O)dO 
+1(/4 
+(19b) 
+where ull(8) is the near tip vertical displacement in the fan. 
+Plastic Zone Exlent and Crack Opening Displacement. We define 
+the "crack opening displacement" ~t as the total separation dis­
+tance between upper and lower crack surfaces at the tip due to 
+the strain singularity of the fan: 
+0, = 2u~(311" /4). (20) 
+A lower bound on 0 l is established from equation (19b) since ulI(O) 
+is monotonic by equation (19a): 
+f
+31(14 
+J < TY~t (3 + ctn t O)dO 
+7/4 
+~ J (1!"(1 - Jli)u~a 11 I . Id' ) :. {I, > = E 1 sma -sea eyle mg (2 + 1r}Ty (2 + 'Jr)Ty 
+(21) 
+The latter form employs the small-scale yielding relation between 
+J and the stress-intensity factor appropriate to the crack of length 
+2a in a remotely uniform stress field. A similar bound is obtained 
+for the maximum value Rmax of the function R(O), and thus ap­
+proximately for the maximum extent of the yielded region. 
+From equation (18), 
+J ,:; 2TY'YyR_.1.::
+/4 
+[ cos 8 + (1 + 3; -28) sin 8] d8 
+~ J (211"(1 - JI) (tT ... )1 
+:. Rmu ::-- 0(2 + 1r}Ty"'(v = 0{2 + 1r) 2Ty a, 
+small-scale yielding) (22) 
+The path integral leads to no upper bounds on deformation 
+measures, but rough approximations can be obtained by choosing 
+a reasonable form for the functions R(O) or containing an 
+unknown constant, and employing the J to determine 
+the constant. Experience with nonhardening solutions in the 
+antiplane strain case [14J suggest that f while and 'U,,(8) 
+will have a dependence on 0 in the small-scale yielding 
+range, the 8 dependence will vary considerably with applied stress 
+level and detailed specimen shape in the large-scale yielding 
+range. Thus no simple approximation will be uniformly valid, 
+and we here choose approximations appropriate to a small plastic 
+region confined to the vicinity of the crack tip. Anticipating that 
+the plastic region will then be approximately symmetrical about. 
+the midline of the fan, 0 = 11"/2, from equations (l9a) and (20) 
+we will have 1[.,,(0) '{;:::S ~,/4 plus a function of 0 that is antisym­
+metric about 0 = 'Jr /2. This antisymmetric term contributes 
+nothing to the integral in equation (19b), and 
+J ~ T~, (3 + ctn 2 O)d8 1 J3r/4 
+2 7/4 
+~ 2J 211"(1 - pt)u !a l' ldin 
+:. {It '{;:::S (2 \- = ( \- E ' small-sea. e yte g. + 'Jr}1 Y 2 + 11")1 Y 
+(23) 
+Journal of Applied Methanics 
+Were a slip-line construction similar to Fig. 5 made in the anti­
+plane strain case, a centered fan of shear lines would result ahead 
+of the crack for 101 < 11"/2, while constant stress regions of parallel 
+shear lines would result above and below the crack line. Exact 
+solutions [14) lead to an elastiCo-plastic boundary cutting into the 
+crack along the boundaries of the fan. Thus one might assume 
+a form for R(O) cutting into the crack tip along the fan boundaries 
+in Fig. 5. Choosing such a form symmetric about 11" /2t 
+R(8) RI RJIIQ; cos [2(8 - 11"/2»), (24a) 
+and equation (18) leads to 
+J ~ 2T y')" yRm&x cos (28 - 11") 
+f
+3 ... / 4 
+r/4 
+X [ cos tJ + (1 + 3; - 28 ) sin 0 ] d8 
+:. Rmax t::::: 2 3'Jr(I-v} (U<1»' 
+= 0(2 + 'Jr) 2Ty a} 
+(small-scate yielding). (24b) 
+The approximations made here are quite arbitrary and our 
+method includes no scheme for assessing errors. Other seem­
+ingly "reasonable" choices for functional forms could shift the 
+approximations either way within constraints set by the lower 
+bounds. 
+Blunting of the Crack Tip. Having just Been an an:!Uy:slSprE~l(~tmlg 
+no large strain concentration ahead of the of a sharp 
+crack, one might wonder how cracks can propagat~ materials 
+for which the hydrostatic stress elevation alone is insufficient to 
+cause fracture. Fig. 6 suggests an answer. The crack tip is 
+progressively blunting under increasing load, and a slip-line 
+pattern very different from that in Fig. 5 results over a small re­
+gion comparable in size to the opening displacement Ot. The fans 
+C and C' become noncentered, and their straight slip lines focus 
+intense deformation into a region D directly ahead of the tip. 
+The progressively blunting tip has been drawn as a semicircle in 
+Fig. 6 for simplicity of illustration, and the associated exponential 
+spiral slip-line field {12] extends a distance 1.9 6t ahead of the tip. 
+From the foregoing approximations, 0, ::os 2"'(vRmax, so that the 
+intense deformation region is extremely small and Fig. 6 is es­
+sentially Fig. 5 magnified in linear dimensions by a large factor of 
+order one over the initial yield strain. Since the blunted 
+is small, an effective procedure would be to perform an incremen-
+tal analysis by regarding the displacement rate to 
+the boundary of region D as by the rate of in the 
+function 'Ur(O), equation with 8 now interpreted as the in-
+clination angle of fan lines with the z-axis. The 
+motivation is that, f&r from the blunted region, this angle will 
+coincide with the polar angle 8, and it is known [12] that 
+fan lines transmit a spatially constant displacement rate 
+to themselves. While such an analysis has not yet been carried 
+out for contained plasticity, a similar analysis for a fully 
+problem has been carried out by Wang 115]. 
+.• BLUNTED 
+I I I--:-.f.9 8t --; 
+Fig. 6 Crack tip blunting creal .. a small region 0 of intense deformation 
+ahead of the crack. This Is Fig. 5 magnifted In linear dimensions by a 
+large fador af the order of one over the 'nfllal yield strain. 
+J U N E 1 9 6 8 I 383 
+
+
+===== PAGE 6 =====
+Barenblatt-Dugdale Crack Model 
+Sharp cracks lead to strain singularities, The Griffith theory 
+[161 of elastic brittle fracture ignores this perhaps unrealistic 
+prediction of conditions at the and employs an energy balance 
+to set the potential energy decrease rate due to crack extension 
+equal to the energy of the newly created crack surfaces. An 
+alternate approach due to Barenblatt [171 removes the singu­
+larity by considering a cohesive zone ahead of the crack~ postulat­
+ing that the influence of atomic or molecular attractions is repre­
+sentable as a restraining stress acting on the separating surfaces, 
+Fig. 7(a}. The restraining stress 0'"(0) may be viewed as a func­
+tion of separation distance 0 as in Fig. 7(0), Although mathe­
+matical difficulties apparently prohibited Barenblatt from de­
+tailed solutions for specific restraining stress functions J we here 
+take the view that a q versus 0 curve falling off to zero is given 
+so that a fracture criterion requires no special assumptions not 
+inherent to the model. A mathematically similar but concep­
+tually different model was proposed by Dugdale [181 to discuss 
+plane-stress yielding in sheets. There the influence of yielding 
+was represented approximately by envisioning a longer crack 
+extending into the region with yield level stresses opposing its 
+opening. For reasons that are not yet clear, some metals actually 
+reveal a narrow slitlike plastic zone [19] ahead of the crack of 
+height approximately equal to sheet thickness when the zone is 
+long compared to the thickness dimension. Except for a perturba­
+tion near the tip, yielding then consists of slip on 45-deg planes 
+through the thickness so that plastic strain is essentially the 
+separation distance divided by the thickness. Restraining stresses 
+typical of plane-stress yielding are shown in Fig. 7(0}. 
+We may evaluate our integral J by employing path inde­
+pendence to shrink. the contour r down to the lower and upper 
+surfaces of the cohesive zone as in Fig. (7)4. Then, since dy = 0 
+onr, 
+1: 
+()u 
+J=- T·-dB 
+r ax 
+- q(o) dx 
+i 
+dO 
+cohea ZODe dx 
+== - - O'"(o)dO d3; 
+J: 
+d {i~ } 
+cohea zone dx 0 
+raj 
+== Jo q(o)dO (25) 
+where 0, is the separation distance at the crack tip. Thus, if the 
+crack configuration is one of many for which J is known, we are 
+able to solve for the crack opening displacement directly from the 
+force-displacement ourve. 
+Equivalence of OrfHlth and CoM,Iv. Force Theorl... Now let us 
+compare to Griffith theory of elastic brittle fracture with the 
+fracture prediction from the Barenblatt-type cohesive force 
+model. Letting o· be the separation distance in Fig. 7(b) when 
+the atoms at the crack tip can be considered pulled out of range of 
+their neighbors, the value of J which will just cause crack ex­
+tension (or, if . crack extension is considered as reversible, will 
+maintain equilibrium at the current crack length) is then 
+J - J:' 17(8)<18 (Cohesive theory) (26a) 
+On the other hand, the Griffith theory regards the total potential 
+energy of a cracked body as P + 28', where l is crack length, 8 is 
+surface energy, and P is the potential energy defined by the con­
+tinuum mechanics solution without regard to cohesive forces. 
+Determining equilibrium by setting the variation in total poten­
+tial to zero, 
+bP 
+-- - 28 ()l 
+384 / J U N E 1 96 8 
+(Griffith theory) (26b) 
+~.(8) • 
+8~' 8 . ... S = SEPARATION DISTANCE 
+_:_r;r 
+y Sl 
+L~8)'R'ST.AINING ST.U' 
+(b) ATOMIC ATTRACTION 
+g,P::: 
+8 .. 
+(a) COHESIVE ZONE AT np (c) PLANE STRESS Y!~LDlNG 
+Fig. 7 Dusdale-Barenblatt crack model. (a) Cohelive zone at crack tip 
+with restralnlns slress dependent on .eparation dlslancej (b) force-dis­
+placement relation for atomic aHradion in elastic brittle fracture; (c) for 
+plane-stress plastic yielding in thin sheet. 
+We conclude that the Griffith theory is identical to a theory of 
+fracture based on atomic cohesive forces, regardless of the force­
+attraction law, so long as the usual condition is fulfilled that the 
+cohesive zone be negligible in size compared to characteristic 
+dimensions (small-scale yielding). This is because the area under 
+the force-separation curve is by definition twice the surface 
+energy and, as we have noted, for small-acale yielding J is equal 
+to the potential energy decrease rate as calculated from the usual 
+continuum solution. 
+This simple demonstration explains the close correspondence 
+found by Goodier and Kanninen [20] between a Griffith theory 
+and numerical calculations for specific nonlinear force attraction 
+laws. Indeed, the discrepancies must be due to the peculiarities 
+of their modeling the discrete atomic structure along the separat­
+ing plane. Willis [21] has recently demonstrated the identity of 
+the two theories through a detailed calculation based on complex 
+variable methods in plane elasticity. His work includes a- dis­
+cussion of problems in interpreting the model and an extension 
+to the constant velocity crack problem. 
+Dugdale Model for Plan ... Str... Yieldinl_ Strain-hardening be­
+havior is readily included in the Dugdale model; analyses to date 
+have been limited to perfect plasticity. For example, with linear 
+work-hardening 
+0'"(0) = 0'"1' + o 
+h 
+(27a) 
+where h is sheet thickness, Ev a tangent modulus, and the strain 
+approximated by O/hl equation (23) gives the crack opening 
+displacement as 
+Ot == ~~ { (1 + :; yh _ 1 } 
+(= uyh {[I + 21r~ (::)1 *J
+1
+/t _ t}l 
+small-acale yielding) (27b) 
+In the latter form the plane-stress value of J for the crack length 
+241 appropriate for small-scale yielding, has been used. With 
+negligible strain-hardening (E. = 0) this becomes 
+J (TO'"""la 11 -, 'eldin) Ot = - - -E ,sma -scwe Y1 g 
+Uy O'"y 
+(27c) 
+as is obvious from equation (25). Other stress-separation dis­
+tance functions are readily handled. In particular, & function 
+first rising and then falling to zero might be useful for studying 
+fracture by necking to zero thickness in ductile foils. 
+The complete solution of the nonhardening Dugdale model for 
+the configuration in Fig. 4 leads to [4] 
+80"y(J [ (11'0"_)] 11"0'.'6 0, - -- log sec -- - -;;;- +. __ TE 20'"1' DO'"y 
+(28) 
+[ ( TO'" Of> ) ] 11'" (0'<:0 )' Rmu - a see 20"1' - 1 - i 0'1' CI + .•. 
+Traasactiol1s of the AS ME 
+
+
+===== PAGE 7 =====
+for the opening displacement and length of the plastic zone. A 
+Taylor development of the first of these checks equation (27c) 
+at low applied stress levels. Further, since J = U~, we may Use 
+this model to estimate the deviation of J from its linear elastic 
+value in the large-scale yielding range. Taking the results for 
+8, and Rmax as representative of plane stress, as observations sug­
+gest [18, 19] for materials in which Dugdale zone6 actually Corm, 
+we may compare small-scale yielding behavior in plane stress 
+with plane strain as approximated by equations (23) and (24b). 
+Thus, for v ::: 0.3, one finds a plane-strain opening displacement 
+which is 61 percent of the plane-stress value for a Mises material 
+(Uy = Vary) and 70 percent for a Tresca material (O"y = 2ry). 
+The plane-st.rain value of Rml1X is 55 percent t.he plane-stress value 
+for a Mises material and 73 percent for a Tresca material. Any 
+compensation for stress biaxiality in raising the Dugdale yield 
+stress in a Mises material above the uniaxial yield would tend to 
+reduce the differences between the Mises and Tresca comparisons. 
+Etching observations [22J suggest a plane-strain to plane-stress 
+zone size ratio in the neighborhood of one half. 
+Strain Concentration at Smooth· Ended Notch Tips 
+Consider a flat-surfaced notch with a smooth tip. Letting 4> 
+the tangent angle at a point on the tip, 88 in Fig. 8, and r,(4)) the 
+radius of curvature, equation (4) becomes 
+1. f
++r/2 
+J = Wdy = . W[E(4))}r,(¢) cos #4> 
+r, -r/2 
+{29} 
+Here E(4)) is the surface extensional strain at the point with tan­
+gent angle 4>, and estimates of the maximum strain will require 
+an approximate choice for the functional dependence on 4>. A 
+lower bound is immediate since W[E(4))] ~ W(EmuJ: 
+(30) 
+where 2h is the distance between the flat notch surfaces. For a 
+linear elastic material 
+1 EE'l 
+W = -2 O"E = ( ) for plane strain 21 - Vi 
+EE'l 
+2 for plane stress. (31) 
+Now consider a notch in the configuration in Fig. 4, which is suf­
+ficiently narrow so that the sharp crack value of J is appropriate. 
+Then for either plane stress or plane strain one has for the maxi­
+mum concentrated stress 
+regardless of the detailed shape of the curved notch tip. An in­
+teresting unsolved problem is the det-ermination of the optimum 
+proportioning of a notch tip. The lower bound would actually be 
+obt&ined if the surface stress were constant at every point on the 
+curved tip, and the problem is to determine the shape of a tip 
+leading to constant stress (if such a shape exists). 
+For approximations to the strain concentration through equa­
+tion (29), we recall a feature of the linear elastic problem of an 
+ellipsoidal inclusion in an infinite matrix subjected. to a uniform 
+remote stress state. All strain components are spatially constant 
+within the inclusion [23]. The same result applies to an ellip­
+soidal void, in that surface displacements are compatible with 
+the homogeneous deformation of an imagined inclusion having 
+zero elastic moduli. Thus, for an elliptical hole in a linear elastic 
+plate, loaded symmetrically so as to cause no shear or rotation of 
+the imagined inclusion, surface strains are given through the 
+usual tensor transformation as 
+E(4)) = Emu COS' 4> + Emin sin' 4>. (33a) 
+Jaufnal of Applied Mechanics 
+Here the 4> notation is &8 in Fig. 8, E .... x is the extensional strain 
+at the semimajor axis (q, - 0, 1F'), and Emili at the semi minor axis 
+(4) ::s 7f'/2, 31F'/2). Thus, presuming this same interpre~tation of 
+the surCace strains to be approximately valid in other eases and 
+that Eml n is small compared to Emu, 
+f
++ r / 2 
+J f:::S W(Emu COSI 4>)r(4)) COS 4xUP 
+-r/2 
+(33b) 
+For linear elastic behavior and the narrow notch in Fig. 4 with 
+a semicircular tip, r,(</l) - rc (a const), this leads to 
+(fmax ::::. ~ O"a>v'OJT, = 2.430"""v'(l7r, (34) 
+One would expect a higher number than the 2 factor for the 
+narrow ellipse, although the 20 percent difference seems rather 
+high. Presuming the material to behave in a perfectly plastic 
+fashion once a yield stress O"y is attained on the notch surface, the 
+energy density under plane-strain conditions is 
+1 W = O"yE - - O"yEy 
+2 for E > Ey = (1 - v')O"y/E. (3Sa) 
+By equation (33b), 
+(
+Em.u:) , ( Ey )1/1 (EID&X )1/1 15J (3Sh) 
+-;;- - Emax -;; - 1 f:::S 80" yE yr, 
+whenever the maximum strain thus computed exceeds the initial 
+yield Ey. The left side may be developed in a series and if we 
+neglect all terms which approach zero when Emu/Ey becomes 
+large, 
+C:max ~! (EY +~) (= ~ Ey [. 1 + 7r (0" ... ), ~J' 4 O"yr, os (Ty r, 
+small-scale yielding) (3Se) 
+This result differs negligibly from equation (35b) when Emu is 
+greater than SEy • The lower bound of equation (30) leads to a 
+formula identical to equation (300), except that the factor 'I. is 
+replaced by lit. A power law relation 0" .... (Ty(t/Ey)N between 
+surf ace stress and strain beyond the elastic limit leads to 
+[
+(N + 1/2)(N + 3/2)r(N + 1/2) J ]1I(1+N) 
+Emu ~ Ey r(I/2)r(N + 1) O"yEyr, 
+(36) 
+Here r( ... ) is the gamma function and terms of order Ey ha.ve 
+been omitted for convenience in calculation. 
+A.13 noted earlier, the approximations made are more or less 
+arbitrary, and no guide is available for improving results. Results 
+in this section are somewhat reminiscent of Neuber's discovery 
+{U} that the product of maximum concentrated stress and strain 
+are independent of the plastic region stress-strain relation for 
+antiplane deformation. The author [4] later pomted out that 
+this result is limited to small-scale yielding, and applies only to 
+notches generated. by stress trajectories of the sharp crack solu­
+tion (and thus to a different notch shape for each different · 
+material). Since J is independent of the plastic region stress­
+strain relation for small-scale yielding, our present results 
+show that the avera.ged energy density then does not depend on 
+the particular stress-strain relation. 
+NOTCH 
+fig. • Coordinates employed in de.crlptlon of notch 
+surface; 4> Is tangent angle and r,(4)) (s radius of curvature 
+JUNE 1968 I 385 
+
+
+===== PAGE 8 =====
+Acknowledgment 
+Support of this research by the Advanced Research Projects 
+Agency, under Contract SD-86 with Brown University, is grate­
+fully acknowledged. 
+References 
+1 Phillips, H. B.t Vector AnalllN, Wiley, 1959. 
+2 Irwin, G. R., "Fracture Mechanics." Structural Meehania 
+(Proceedings of Firat Nat1al SympoBium,) Pergamon Press, 1960. 
+3 Eshelby, J. D., "The Continuum Theory of Lattice Defects," 
+Solid State PhyBics, Vol. 3, Academic Press, 1956. 
+4 Rice, J. R., "The Mechanics of Crack Tip Deformation and 
+Extension by Fatigue," Fatigue Crack Growth, ASTM Spec. Tech. 
+Pub!. 415, 1967. 
+5 Williams, M. L., "On the Stress Distribution at the Base of 8. 
+Stationary Crack," JOURN.-'.L of ApPLIED MECH .... NIC8, Vol. 24, No. I, 
+TRANS. ABME, Vol. 79, Mar. 1957, pp. 109-114. 
+6 Rice, J. R., "Mathematical Analysis in the Mechanics of Frac­
+ture," to appear in Treatise on Fracture, Vol. 2, ed., Liebowitz. H.t 
+Academic Press. 
+7 Sanders. J. L., HOn the Griffith-Irwin Fracture Theory," 
+JOURNAL OF ApPLIED h!ECHANICS, Vol. 27, No.2, TRANS. MME, 
+Vol. 82, Series E. June 1960, pp. 352-353. 
+8 Thomas. A. G., "Rupture of Rubber, II, The Strain Con­
+centration at an Incision," Journal of Polymer Scient:e, Vol. 18, 1955. 
+9 Rice, J. R., and Drucker, D. C., "Energy Changes in Stressed 
+Bodies Due to Void and Crack Growth," Internatwnal10urnal of 
+Fracture Mechanics. Vol. 3, No. I, 1967. 
+10 Bowie, O. L., and Neal, D. M., "The Effective Crack Length 
+of an Edge Notch in a Semi-Infinite Sheet Under Tension," to appear 
+in International Journo.l oj Fracture Meclw.nics. 
+11 Rice, J. R.. "Stresses Due to a Sharp Notch in a Work-Hard­
+ening Elastic-Plastic Material Loaded by Longitudinal Shear,n 
+JOURNAL OF ApPLIED MECHANICS. Vol. 34, No.2, TRANS. ASME, Vol. 
+89, Series E, June 1967, pp. 287-298. 
+12 Hill. R.t TM Mathematical Theorll of Pla&ticitll. Clarendon 
+Press, Oxford. 1960. 
+13 Lee. E. H.t "Plastic Flow in a V-Notched Bar Pulled in Ten. 
+sion:' JOURNA.L 01' APPLIED MECHANICS. Vol. 19. No.8. TRANI. 
+ABME, Vol. 74 Sept. 1952, pp. 331-336. 
+14 Rice. J. R., "Contained Plastio Deformation Near Cracks and 
+Notches Under Longitudinal Shear." International Journal 0/ FrtM>l 
+ture Mechaniu, Vol. 2, No.2, 1966. ., 
+15 Wang, A. J't "Plastic Flow in a Deeply Notched Bar With &. 
+Semi-Circular Root." (Juarterlll oj Applied M~. Vol. 11, 
+1954. 
+16 Grifiith, A. A" "The Phenomena of Rupture and Flow in 
+Solids." Philosophical Transactiom oj the Rol/al Society, London. Series 
+AI Vol. 221,1921. 
+17 Barenblatt, G. I., "Mathematical Theory of Equilibrium 
+Cracks in Brittle Fracture," Advances in Applied Mechanics, Vol. 7, 
+Academic Press, 1962. 
+18 Dugdale, D., "Yielding of Steel Sheets Containing Slits," 
+JtJu:mal of the ,,;\fechamcs alld Physics of Solids. Vol. 8. 1960. 
+19 Hahn, G. T., and Rosenfield. A. R .• "Local Yielding and Ex­
+tension of a Crack Under Plane Stress," Acta .rVetallU'l'aW. Vol. 13. 
+No.3,1965. 
+20 Goodier, J. N., and Kanninen, M. F., "Crack Propagation in a 
+Continuum Model With Nonlinear Atomic Separation Laws," Stan­
+ford University. Division of Engineering Mechanics. Technical Re­
+port 165, July 1966. 
+21 Willis. J. R., uA Comparison of the Fracture Criteria of 
+Griffith and Barenblatt," JfJttrnal oj the Mechanics and Phllaic8 oj 
+&tida. Vol. 15, 1967. 
+22 Hahn, G. T., and Rosenfield, A. R., "Experimental Determina­
+tion of Plastio Constraint Ahead of a Sharp Crack Under Plane Strain 
+Conditions," Ship Structure Committee Report. SSC-180, Dec. 1966. 
+23 Eshelby, J. D., "The Determination of the Elastic Field of an 
+Ellipsoidal Inclusion and Related Problems," Proe&ding8 of the 
+Royal &ciety, London, Series:A. Vol. 241, 1957. 
+24 Neuber, H. "Theory of Stress Concentration for Shear­
+Strained Priamatical Bodies With Arbitrary Nonlinear Stress-Strain 
+Laws," JOURNAL OF ApPLIED MECHANICS, Vol. 28, No.4, TRANS. 
+ASME, Vol 83, Series E, 1961, Dec. 1961, pp. 544-550. 
+Reprinted from the June 1968 
+Journal of Applied .iUechanics 
+38B / J U N E 1 9 6 8 Transactions of the ASME 

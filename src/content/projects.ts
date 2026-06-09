@@ -18,110 +18,112 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    id: "old-awh",
-    title: "OLD Atmospheric Water Harvesting System",
-    shortTitle: "OLD AWH",
-    phase: "Early low-scale prototype",
-    year: "First generation",
+    id: "awh-v1",
+    title: "Atmospheric Water Harvesting Prototype V1",
+    shortTitle: "Atmospheric Water Harvesting V1",
+    phase: "Proof-of-concept thermal prototype",
+    year: "First design iteration",
     modelFile: "models/old-awh-system.glb",
     cameraOrbit: "35deg 68deg 210%",
     summary:
-      "A first-generation atmospheric water harvesting prototype used to prove the core architecture at a smaller scale before the system was expanded.",
+      "Early low-scale prototype for extracting water from humid air using cooling, sorbent-assisted capture, sensors, and test-driven iteration.",
     role:
-      "Optimized the mechanical layout, supported experimental testing, inspected component issues, and used sensor data to understand where the design needed to improve.",
+      "Reviewed the mechanical layout, supported testing, inspected airflow and wiring issues, and used logged temperature/RH data to guide design improvements.",
     problem:
-      "AWH systems lose effectiveness under hot, low-humidity UAE conditions. The early prototype had to validate whether refrigeration, sorption, TEC boost cooling, and environmental monitoring could work together as a practical decentralized water system.",
+      "Atmospheric water harvesting extracts water from air, but hot and arid conditions reduce condensation efficiency. V1 tested whether cooling, moisture capture, and sensing could work together in a compact prototype.",
     result:
-      "The prototype established the baseline configuration and exposed the next engineering priorities: cleaner airflow paths, better serviceability, more robust wiring, stronger data logging, and a higher-capacity package.",
-    viewerAlt: "3D model of the first-generation atmospheric water harvesting prototype",
+      "Established the baseline package and revealed practical improvement areas: airflow path clarity, service access, wiring robustness, sensor logging, and higher-capacity packaging.",
+    viewerAlt: "3D model of atmospheric water harvesting prototype V1",
     metrics: [
-      "Baseline low-scale AWH package",
-      "Hybrid VCR, TEC, MOF, and sensor-monitoring concept",
-      "Used as the design reference for the upscaled version"
+      "Low-scale proof-of-concept",
+      "Cooling, sorbent, TEC, and sensor integration",
+      "Baseline for V2 design decisions"
     ],
     contributions: [
       "Mechanical packaging and component layout review",
-      "Airflow, wiring, and logging issue investigation",
+      "Airflow, wiring, and data-logging troubleshooting",
       "Prototype testing support and performance interpretation"
     ],
-    tools: [
-      "Autodesk Inventor",
-      "Fusion 360",
-      "Arduino Mega",
-      "Processing IDE",
-      "Excel logging"
-    ]
+    tools: ["Autodesk Inventor", "Fusion 360", "Arduino Mega", "Processing IDE", "Excel logging"]
   },
   {
-    id: "new-awh",
-    title: "NEW Atmospheric Water Harvesting System",
-    shortTitle: "NEW AWH",
-    phase: "Improved upscaled design",
-    year: "Current generation",
+    id: "awh-v2",
+    title: "Atmospheric Water Harvesting System V2",
+    shortTitle: "Atmospheric Water Harvesting V2",
+    phase: "Improved higher-scale system design",
+    year: "Second design iteration",
     modelFile: "models/new-awh-system.glb",
     cameraOrbit: "-35deg 64deg 230%",
     summary:
-      "An improved and upscaled AWH design that builds from the early prototype into a cleaner, larger, and more research-ready mechanical system.",
+      "Upscaled AWH system that improved the V1 concept for stronger airflow control, component access, experimental stability, and yield evaluation.",
     role:
-      "Advanced the design toward higher-capacity operation, supported troubleshooting, analyzed yield and energy performance, and contributed to technical reporting and research documentation.",
+      "Advanced the design toward higher-capacity operation, supported troubleshooting, analyzed yield and energy performance, and contributed to research documentation.",
     problem:
-      "The next version needed to preserve the hybrid AWH concept while improving scale, airflow distribution, component access, dry-condition resilience, and experimental stability.",
+      "The system needed to generate useful water in difficult UAE conditions while remaining testable, serviceable, and clear enough for repeated experimental evaluation.",
     result:
-      "The AWH research program validated a working prototype with up to 11.33 L/day in VCR-only mode at 0.94 kWh/L and 13.67 L/day with VCR plus TEC. MOF-assisted operation improved dry-condition resilience and measurable yield behavior.",
-    viewerAlt: "3D model of the improved and upscaled atmospheric water harvesting design",
+      "Validated a working research prototype: up to 11.33 L/day in VCR-only mode at 0.94 kWh/L, and 13.67 L/day with VCR plus TEC. MOF-assisted operation improved dry-condition resilience.",
+    viewerAlt: "3D model of atmospheric water harvesting system V2",
     metrics: [
-      "11.33 L/day VCR-only test result",
+      "11.33 L/day VCR-only result",
       "13.67 L/day with VCR plus TEC",
       "MOF-assisted dry-condition resilience"
     ],
     contributions: [
       "Upscaled enclosure and airflow concept development",
       "Sensor-driven performance analysis and data logging",
-      "Research documentation, posters, reports, and proposal material"
+      "Technical reports, posters, proposals, and research documentation"
     ],
-    tools: [
-      "Autodesk Inventor",
-      "ANSYS Fluent",
-      "Fusion 360",
-      "Arduino",
-      "Temperature/RH sensors"
-    ]
+    tools: ["Autodesk Inventor", "ANSYS Fluent", "Fusion 360", "Arduino", "Temperature/RH sensors"]
   },
   {
     id: "exoskeleton",
     title: "6-DOF Exoskeleton",
-    shortTitle: "Exoskeleton",
-    phase: "Mechanical and mechatronics rehabilitation project",
-    year: "Prototype project",
+    shortTitle: "6-DOF Exoskeleton",
+    phase: "Rehabilitation mechatronics prototype",
+    year: "Functional prototype",
     modelFile: "models/exoskeleton.glb",
     cameraOrbit: "20deg 72deg 240%",
     summary:
-      "A 6-DOF lower limb rehabilitation exoskeleton combining adjustable mechanical support, IMU sensing, motor actuation, AI gait classification, and GUI/AR demonstration workflows.",
+      "Lower-limb rehabilitation exoskeleton combining adjustable mechanical support, IMU sensing, actuation, AI gait classification, and GUI/AR demonstration workflows.",
     role:
-      "Contributed to mechanical design, simulation, prototype assembly, IMU data collection, AI integration, circuit layout, testing, and troubleshooting.",
+      "Contributed to mechanical design, structural simulation, prototype assembly, IMU data collection, AI integration, circuit layout, testing, and troubleshooting.",
     problem:
-      "Many rehabilitation exoskeletons are bulky, expensive, fixed-pattern, and weakly adaptive to users. The project focused on a lighter, adjustable, sensor-driven structure for safer gait rehabilitation.",
+      "Rehabilitation devices must support human motion safely without becoming too bulky, fixed, or difficult to adapt. This project focused on a lighter adjustable structure with sensor-driven control.",
     result:
-      "A functional prototype was built and tested using carbon-fiber tubes, aluminum parts, and 3D-printed components. Simulations verified structural behavior across gait phases, and required motor torque was identified above 124.5 N.m.",
+      "Built and tested a functional prototype using carbon-fiber tubes, aluminum parts, and 3D-printed components. Simulations verified structural behavior across gait phases, with motor torque identified above 124.5 N.m.",
     viewerAlt: "3D model of a 6-DOF lower limb exoskeleton prototype",
-    metrics: [
-      "6-DOF lower limb support",
-      "IMU-based gait sensing",
-      "Motor torque requirement above 124.5 N.m"
-    ],
+    metrics: ["6-DOF lower-limb support", "IMU-based gait sensing", "Motor torque above 124.5 N.m"],
     contributions: [
       "Hip, knee, and ankle support link design",
       "Motor housings, couplings, shafts, and sensor placement",
       "MATLAB GUI, Edge Impulse, Arduino, and Unity AR integration support"
     ],
-    tools: [
-      "CAD",
-      "ANSYS",
-      "MATLAB/Simulink",
-      "Arduino Nano 33 BLE Sense",
-      "Edge Impulse",
-      "Unity AR"
-    ]
+    tools: ["CAD", "ANSYS", "MATLAB/Simulink", "Arduino Nano 33 BLE Sense", "Edge Impulse", "Unity AR"]
+  },
+  {
+    id: "suspension-design",
+    title: "Suspension Design",
+    shortTitle: "Suspension Design",
+    phase: "Double-wishbone CAD assembly",
+    year: "CAD portfolio project",
+    modelFile: "models/suspension-design.glb",
+    cameraOrbit: "35deg 68deg 250%",
+    summary:
+      "Front double-wishbone suspension corner CAD assembly showing wheel-location geometry, coilover packaging, chassis brackets, and component interaction.",
+    role:
+      "Designed and assembled the suspension corner, modeled the control arms and brackets, positioned the coilover, and integrated the upright/hub interface.",
+    problem:
+      "A front suspension corner must locate the wheel accurately, package the spring-damper unit, connect cleanly to the chassis, and communicate force-transfer paths in limited space.",
+    result:
+      "Produced a portfolio-ready CAD assembly that explains suspension hardpoints, wheel-location logic, packaging, and a clear foundation for future kinematic or structural analysis.",
+    viewerAlt: "3D model of a front double-wishbone suspension corner CAD assembly",
+    metrics: ["Double-wishbone architecture", "Control arms and upright/hub interface", "Direct coilover packaging"],
+    contributions: [
+      "Upper and lower control arm layout",
+      "Chassis mounting brackets and joint locations",
+      "Compact assembly layout for portfolio visualization"
+    ],
+    tools: ["Autodesk Inventor", "CAD assembly constraints", "3D part modeling", "Coil feature modeling", "Exploded-view preparation"]
   }
 ];
 
@@ -131,15 +133,15 @@ export const skills = [
     items: ["Autodesk Inventor", "Fusion 360", "AutoCAD", "ANSYS", "CFD/Fluent", "COMSOL", "ADAMS"]
   },
   {
-    group: "Prototype Build",
-    items: ["3D printing", "CNC and conventional machining", "Carbon-fiber tubes", "Aluminum parts", "Basic welding"]
+    group: "Mechanical Design",
+    items: ["Thermal systems", "Airflow packaging", "Suspension layout", "Vehicle dynamics basics", "Machine design"]
   },
   {
-    group: "Controls and Data",
-    items: ["Arduino", "IMU sensors", "Temperature/RH sensors", "MATLAB/Simulink", "Processing IDE", "Excel data logging"]
+    group: "Prototype and Testing",
+    items: ["3D printing", "CNC/conventional machining", "Sensor logging", "Troubleshooting", "Experimental data analysis"]
   },
   {
-    group: "Engineering Communication",
-    items: ["Research writing", "Technical documentation", "Testing reports", "Stakeholder coordination", "Arabic and English"]
+    group: "Controls and Communication",
+    items: ["Arduino", "IMU sensors", "MATLAB/Simulink", "Research writing", "Technical documentation", "Arabic and English"]
   }
 ];

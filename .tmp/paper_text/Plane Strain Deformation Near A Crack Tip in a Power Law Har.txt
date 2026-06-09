@@ -1,0 +1,641 @@
+
+
+===== PAGE 1 =====
+0, w
+t.<'C / .7 -z 9
+W Diwision of Engineering
+BROWN UNIVERSITY
+W " - toPROVIDENCE, R. I.
+% DPEO S
+PLANE STRAIN DEFORMATION NEAR
+A CRACK TIP IN A POWER LAW
+HARDENING MATERIAL
+J. R. RICE and G. F. ROSENGREN
+"Department of Defense
+Aduanced Research Projects Agency
+Contract SD-86
+SMaterials Research Program
+ARPA E49 July 1967
+
+
+
+===== PAGE 2 =====
+PLANE STRAIN DEFORMATION NEAR A CRACK TIP
+IN A POWER LAW HARDENING MATERIAL
+by
+J. R. Rice and G. F. Rosengren
+Division of Engineering
+BROWN UNIVERSITY
+Providence, Rhode Island
+TEOUNIOAL LIBRARY
+BLDG. 313
+ABERDEEIN PROVING GROUND MD,
+STEAP-TL
+July 1967
+Assistant Professor of Engineering, Brown University, Providence, R. I.
+Research Assistant in Engineering, Brown University, Providence, R. I.
+
+
+
+===== PAGE 3 =====
+ii
+Abstract
+Crack tip strain singularities are investigated with the aid of an
+energy line integral exhibiting path independence for all contours surround-
+ing a crack tip in a two dimensional deformation field of an elastic material
+(or elastic-plastic material treated by a deformation theory). It is argued
+that the product of stress and strain exhibits a singularity varying inversely
+with distance from the tip in all materials. Corresponding near crack tip
+stress and strain fields are obtained for the plane straining of an incom-
+pressible elastic-plastic material hardening according to a power law. A
+noteworthy feature of the solution is the rapid rise of triaxial stress con-
+centration above the flow stress with increasing values of the hardening
+exponent. Results are presented graphically for a range of hardening expo-
+nents, and the interpretation of the solution is aided by a discussion of
+analogous results in the better understood anti-plane strain case.
+
+
+
+===== PAGE 4 =====
+1
+Introduction
+Elastic-plastic analyses of deformation fields near cracks are of obvious
+relevance to the mechanics of fracture. Little progress has been made on the
+important problems of tensile loadings opening a crack, although the anti-plane
+strain case is now well understood for both perfectly plastic (Hult and
+McClintock, i190) and strain hardening (Neuber, 1961; Rice, 1967a) materials,
+and some useful approximate models (Dugdale, 1960; Rice, 1967b) have been pro-
+posed for tensile cases. A recent analytical technique developed by Rice
+(1967c) identifies a line integral which has the same value for all paths en-
+circling the tip of a crack or flat surfaced notch in two dimensional deforma-
+tion fields of linear or non-linear elastic materials. Appropriate choices of
+the integration path have led to approximate estimates of strain concentrations
+for a variety of notch problems; we here employ the method as a starting point
+in the analysis of near crack tip deformation fields in the plane straining of
+materials which harden according to a power law relation between stress and
+strain.
+Let
+E
+W(c) = iJ d1i.
+0
+denote the energy density of an elastic material. Then considering a homogen-
+eous body of this material containing a traction free crack and subjected to
+a two dimensional deformation field (Fig. 1, all stresses depend only on x
+and y), the line integral
+J [W(E)dy T -" ds]
+r
+has the same value for all paths r surrounding the tip. Here the path is
+
+
+
+===== PAGE 5 =====
+2
+traversed in the contra-clockwise sense, T is the traction vector on r
+defined according to the outward normal, T. .= .n. , u is the displacement
+vector, and s is arc length. Path independence is readily demonstrated in
+a standard fashion by choosing two separate integration paths rF and r2.
+Since the integrand vanishes on the crack surfaces, J 2 -J1 is the above
+integral carried around the boundary of the area between rF and r 2 , and a
+Green-Gauss type transformation of a line integral to an area integral immedi-
+ately leads to J2 -1 = 0, proving path independence. As no success has been
+met in finding similar path independent integrals for incremental elastic-
+plastic stress strain relations, we are here forced to consider a deformation
+theory of plasticity which is in reality a non-linear elasticity. In parti-
+cular, we consider an incompressible material with a relation between devia-
+toric stresses and strains of the Mises form
+2TS.. : E.. (2)
+where T : / ½ s..s.. and y = V2cijEi. and with the hardening following2 1) 1) 1] 1
+a power law of the form
+T
+T Gy - for r < Y
+Yo
+(3)
+N
+T T (Y for y >y
+0
+Here Toyo are the yield stress and strain in shear, and N is the
+hardening exponent. As our concern will be only with the near crack tip
+strain singularity, incompressibility is not expected to be a poor approxima-
+tion for moderate strain hardening as plastic strains are incompressible.
+Also, the resulting near tip solution involves proportional flow so that a
+
+
+
+===== PAGE 6 =====
+3
+deformation theory is less objectionable than usually the case.
+The utility of the path independent integral lies largely in the fact that
+its value may be simply determined for a variety of cases and configurations
+(Rice, 1967c). For example, the integral has the same value as for the linear
+elastic solution to a given problem when the yield zone is small compared to
+geometric dimensions of the problem. This is because such small scale yielding
+solutions may be obtained through a boundary layer approach (Rice 1967a,b) in
+which actual boundary conditions are replaced by the requirement of an asymp-
+totic approach to Irwin's (1960) characteristic linear elastic inverse square
+root stress distribution at large distances from the tip. An extension of the
+integration path to infinity then requires that only the asymptotically
+approached field contributes, and the small scale yielding value of J is
+(l-v 2 )K2
+E (4)
+Here KI is Irwin's stress intensity factor, and for the well known problem
+of a crack of length 2a subjected to a uniform remote tension 0,
+W(l-v 2 )a~aJ E (5)E
+Approximate evaluations of J for large scale yielding are possible due to
+the relation of the line integral to the rate of variation of equilibrium
+potential energy of a cracked body with respect to crack length. One such
+approximation is given and others are suggested by Rice (1967c).
+Crack Tip Singularities
+Choosing a circular path of radius r for the evaluation of J, Eq. (1)
+becomes
+
+
+
+===== PAGE 7 =====
++W1
+J={W~c(r,e)]cos. - T(r,e) • au (r,e)} de (6)
+r --W
+Evidently the bracketed integrand 1...} must exhibit a singularity at the
+crack tip which, at least in its angular average, depends inversely on distance
+from the tip. Since -all terms within the integrand are of order stress times
+strain (assuming rotations to be of the same order as strains) one is tempted
+to conclude that crack problems in all materials result in a 1/r singularity
+in the product of stress and strain,
+a function of 8o.. .. -as r + 0 0 (7)13 1) r
+While attempts at a rigorous proof of this assertion have not been successful,
+its validity in solved cases is noteworthy. The inverse square root linear
+elastic stress singularities are in agreement, as is also an approximate
+analysis of perfectly plastic plane strain (Rice, 1967c) where a 1/r strain
+singularity results from the centered fan slip line field (Hill, 1950) charac-
+teristic of analogous punch problems. Further, the validity of Eq. (7) may be
+verified in all elastic-plastic anti-plane strain crack solutions (Rice, 1967a).
+For power law hardening materials, Eq. (7) implies near crack tip stress
+and strain distributions of the form
+-N/(I+N) E-/(1+N)E (8) (8)13 i] i3 z]
+Conversely, we may turn our procedure around and prove the following: If
+stress and strain components have the singular structure of powers of r
+times functions of 8, then traction free crack surface boundary conditions
+(which lead directly to path independence) may be satisfied only if the powers
+
+
+
+===== PAGE 8 =====
+5
+of r are as in Eq. (8). This converse procedure is essentially a concise
+adaption of Williams' (1957) eigenfunction expansion to the non-linear case,
+but here we determine the eigenvalue (exponent of r) directly, and have left
+only the problem of determining the corresponding eigenfunction.
+To achieve this latter task, we introduce an Airy stress function U to
+satisfy equilibrium and give the correct dependence on r:
+U = (1+N)2 r( 2+N)/(I+N) f(8) (9)2÷N
+Near crack tip stresses are then
+a2 u -N/(I+N f(e)Ve8 ar2 -. ,fe
+%e
+a aur+Nl(l+N) f)(e)
+(10)
+1 au 1 a2U+ -
+rr r ar r 2 a02
+(-+N) r-N/(l+N) rf(8) + N )3
+- ~ -~~'' +2+N
+In a similar fashion, incompressibility and strain compatibility are satisfied
+by introducing a stream function
+S r(1+2N)/(1+N) g(8) , (11)
+resulting in displacements
+U -1 3T rN/(l+N) g'(6)r r W8
+(12)
+U 3 1+2N N/(I+N) g(e)e - r - 1+N
+
+
+
+===== PAGE 9 =====
+6
+Near crack tip strains are
+= N -1/(1+N) g'(e)
+ee rr I+N
+(13)
+_ 1 -1/(i+N) 1+2N e ,,(Cr0 r [ g(e) + g"e)]
+(I+N) 2
+The functions f(e), g(e) are not independent, but must be chosen to satisfy
+the one independent stress-strain relation of Eqs. (2) and the hardening law,
+Eq. (3), giving the following two equations
+[f,, + N(2÷N) f] [g,, + 1+2N g] _ 4N
+(lIN) 2  (l+N) 2  (l+N) 2
+Ef,, + N(2÷N) f] 2 + 4 f, 2  (14)
+(1+N) 2  (l+N) 2
+4r2  Nj2 [, I2N N42NN
+2N (1+N)4 (1+N)2 (l+N) 2
+0
+Solving for f(8) from these two equations give, after some algebra, the
+following fourth order differential equation for f.
+fIV + N(2+N) f 1 N {+ N [4Nf" + 1 h] [h 2+4f' 2 ]
+(l+N) 2  h2 +4Nf' 2  (l+N) 2  liN
+4(1-N) 1hN
++4(-N) f'[hh'+4f'f"] + 1N( [3hh' 2 8h'f'f"+4h(f"2+f'f'")]
+(l+N) 2
++ (I-N)(l-3N) h [hh' + 4f,f,,] 21 = 0 (15)
+N2 (1÷N) h 2+4f, 2
+where, for brievety's sake we have put
+
+
+
+===== PAGE 10 =====
+7
+h = (l+N)f" + N(+N f (16)
+Note that the governing differential equation for f(8) has an
+equi-dimensional character, in the sense that if f(9) is a solution, then
+so Is any constant times f(e). The unknown multiplicative constant is
+determined in terms of the value J of the path independent integral by
+inserting our solution into Eq. (6). The equation is solved over the interval
+O,w subject to boundary conditions which insure a solution corresponding to
+symmetric deformations relative to the crack line. Note that f(O) may be
+chosen arbitrarily, say as
+f(O) 1 , (17)
+with the solution subject to a later normalization. Symmetry requires that
+ar8' aarr/ae, and au88/a8 all vanish on 8 0, leading to two further
+conditions
+f'(0) = f,,'(0) = 0 . (18)
+Finally, traction free crack surfaces require 0 88 and ar8 to vanish at
+e = w, so that
+f(W) = f'(w) = 0 . (19)
+Five boundary conditions appear at first sight to overspecify the fourth order
+equation for f(O). Actually, they do not, for the two conditions at 6 = V
+imply one another. This is because the assumed forms of dependence on r in
+Eqs. (9, 11) necessarily result in path independence for the integral J and,
+recalling the proof of path independence sketched out in the introduction,
+this means that
+
+
+
+===== PAGE 11 =====
+8
+u aue (r,r) aur(r,ir)
+T(r,w) • (r,w) a- (rw) -a + (1 (r,w) a- 70 (20)
+for all solutions of the equation for f(e). Thus the vanishing of are on
+the crack surface implies the vanishing of aee.
+Numerical Computations and Graphical Results
+For the numerical solution of the differential equation for f, Eq. (15),
+a fourth order Runge-Kutta integration was used. Since this method can only
+be used for initial value problems, and ours is a two point problem, as seen
+from the boundary conditions Eqs. (17), (18) and (19), starting values of
+f"(0) had to be guessed until two values of "'(") were found, one giving
+f(w) < 0 and the other giving f(w) > 0, and a linear interpolation procedure
+could be used. After some trial runs a step size equal to 0.90 was found to
+be a good choice and for all values of N, except for N > 0.9, rapid conver-
+gence was obtained. For N > 0.9 the solutions were very sensitive to changes
+in f"(0), reflecting the breakdown of Eq. (15) for N = 1, in which case one
+obtains expressions of the form 0/0. Consequently, instead of using the
+interpolation procedure where N > 0.9, the appropriate interval for f"(0)
+in these cases was run through by using small increments in f"(0) and the
+right solution was chosen by inspection of the results.
+Because of the complicated form of the differential equation for f(8),
+no attempts have been made to make any error estimates of the numerical calcu-
+lations. However, since all results for N = 1, in which case the analytic
+solution is easily obtained, are very close to the results for N = 0.99, as
+can be seen from the figures, it is believed that the numerical results can
+be accepted with great confidence.
+In determining the correct multiplicative constant for f(8), i.e.
+
+
+
+===== PAGE 12 =====
+9
+performing the integration of Eq. (6), a 5 point formula was used.
+All computations were performed on an IBM-360 and the average computing
+time for a run was 3.5 min.
+In Fig. 2 the power hardening law, Eq. (3), has been drawn for some
+different values of the hardening exponent N.
+From the expressions for the Mises equivalent shear stress T and shear
+strain y one finds
+r E [R(O)/r]N/(I+N) [R(O)/r]I/I+N (21)
+0 0 Re/
+where R(O) is an expression containing f(O) and its derivatives, or, when
+using the normalized form of f(e), R = R(e;J,N).
+From Eq. (21) one immediately sees that R(8) gives the shape of constant
+equivalent strain lines very near the crack tip and that R(e) can be inter-
+preted as an approximate indication of the distance from the crack tip to the
+elastic-plastic boundary; approximate since our solution gives the singular
+term only, and not of necessity the complete solution in the plastic region.
+In Figs. 3 and 4 the nondimensional distance y0T 0R(e)/J is shown for different
+values of N; the latter figure amplifies detail near the crack tip through a
+twenty five times larger scale. In these figures the extreme closeness between
+the results for N = 1 and 0.99 is readily demonstrated.
+In Fig. 5 it is demonstrated how the elastic-plastic boundary in front of
+and behind the crack tip strongly depends on the hardening exponent. In this
+figure is also shown how the maximum distance from the crack tip to the
+elastic-plastic boundary, yoTo R max/J, varies with N.
+Using the expressions for the stresses one easily finds that the mean
+stress, p = (oee+a rr)/2 divided by T is a function of e only. Figure 6
+shows this e-variation of p/T together with the mean stress distribution
+in the perfectly plastic case, N = 0. The latter distribution is easily
+
+
+
+===== PAGE 13 =====
+10
+obtained from the condition of two regions of constant stress state, one in
+front and one behind the crack tip, with the regions being built up of
+isosceles right triangles thus forcing any slip line leaving the crack surface
+and ending up at the symmetry line in front of the crack tip to swing through
+an angle of w/2 giving p/T = 1 + w at 8 = 0 (Hill, 1950 and Rice, 1967c).
+In this figure again is demonstrated the closeness of the results for N = 1
+and 0.99 as well as how close the results for N = 0.005 and N = 0 are to
+each other.
+In Fig. 7 is shown how the ratio of the maximum normal stress to the
+equivalent stress along the symmetry line ahead of the crack, a e/2T 1=0
+varies with the hardening exponent. The rapid rise over the l+w/ 2 value
+anticipated from perfect plasticity is notable and of interest when, for
+instance, discussing fracture.
+For the displacements one finds, when using the normalized f(8), that
+u r o/J and U To/J can be expressed as a product of (r/R)N/(I+N) and
+functions of 0. These normalized displacements were calculated and in
+Fig. 8 the shape of the deformed crack surfaces in the plastic region are
+shown for some values of N. An arrow in the figure indicates the displace-
+ments at the elastic-plastic boundary behind the crack tip as well as the
+direction of the displacements at the crack in the plastic region. At
+the bottom of the figure is also a scale showing the nondimensional distance
+from the crack tip to the elastic-plastic boundary behind the crack tip,
+y7o0R(v)/J. As seen from the results in Fig. 8, the crack opening is very
+insensible to the value of the hardening exponent and for N < 0.2 the crack
+opening 6t can be taken to be
+6t z 0.58 J/t (22)
+
+
+
+===== PAGE 14 =====
+11
+From Fig. 8 one sees also how the blunting of the crack tip varies with N.
+However, since our numerical results do not give a clear indication on
+whether the distance from the crack tip to the elastic-plastic boundary behind
+the crack is zero or not when N = 0 (see Fig. 5), it is not possible to say
+anything definite about the deformed shape of the crack surface in that case.
+A displacement discontinuity results at the tip according to the slip line
+analysis of Rice (1967c).
+Finally, Fig. 9 shows how the maximum shear direction varies around the
+crack for different N. The straight line segment limit results from the slip
+line construction noted earlier for the perfectly plastic case, N = 0. In the
+elastic case, N = 1, there is a hydrostatic stress state in front of the
+crack thus leaving the maximum shear directions indeterminate for e = 0. For
+all other values of N the maximum shear directions in front of the crack are
+in the 450 -directions relative to the symmetry line, and the figure nicely
+demonstrates the transition of the distribution of the maximum shear direction
+between the two limiting cases, N = 0 and N = 1.
+TEOEIOAL 1IBRK97BLDG 313
+Discussion Ag3;DzEJ FOVEG GU0U33
+We emphasize that our solution gives only the structure of the crack tip
+singularity. Thus, for example, predictions of the elastic-plastic boundary
+location are approximate. Since the anti-plane strain crack problem (Rice,
+1967a) is well understood, some insight into the proper interpretation of our
+solution might be obtained through an examination of that case. Anti-plane
+stress and strain singularities in the form of Eqs. (8) can be found and,
+indeed, the complete solution does reveal a deformation field dominated by
+such a singularity near the crack tip. It turns out that for small scale
+
+
+
+===== PAGE 15 =====
+12
+yielding (the boundary layer approach noted in the introduction), the singular
+forms of Eqs. (8) give the complete solution in the plastic region. Elastic
+fields can be found which continue the solution across the elastic-plastic
+boundary predicted by the singular terms, and which meet the asymptotic boun-
+dary conditions. This is a remarkable fact, but it is uncertain (and doubted)
+that a similar role would be played for small scale yielding by the singulari-
+ties in plane strain.
+For anti-plane yielding on a scale comparable to crack length, the
+elastic-plastic boundary begins to differ significantly from that predicted
+by the singular term alone. Also, while mathematically the singularity
+dominates in the limit as r -) 0, one finds for small N that strain magni-
+tudes become excessively large and distances from the tip small before the
+singular term dominates the complete solution. The limit of such behavior
+results for perfect plasticity (N = 0). Then, while the strain field exhibits
+a 1/r singularity, the distribution in 6 changes with remote stress level
+in the large scale yielding range. No unique singular strain distribution
+exists. A similar feature undoubtedly results for plane strain; the singular
+term solution appears (from our figures) to have a unique limit as N -) 0 but,
+in fact, our equations do not have a unique solution for the stream function
+(Eq. 11) when N = 0. Nevertheless, the 1/r strain singularity would appear
+necessitated and our solution gives the correct average (in the sense of the
+J integral) 6 dependence of the strength of this singularity.
+The very rapid rise of stress triaxiality with strain hardening exponent
+(Fig. 6) over the practical range for structural metals, say N = 0.05 to 0.3,
+shows that hardening can elevate stresses not only by increasing the flow
+stress with increasing strain but also by modifying the stress state. Thus,
+for example, a low yield strength metal may develop local peak stresses in
+
+
+
+===== PAGE 16 =====
+13
+front of a crack comparable to or in excess of those for a higher strength
+metal, simply because lower strength materials tend to exhibit greater harden-
+ing exponents. The presence of large tensile stresses ahead of a crack is
+clearly important for the nucleation of micro-cracks in materials capable of
+cleavage; they are also important for the promotion of ductile fracture mech-
+anisms involving the large growth and final coalescence of voids. Although
+the later mechanism may appear strain controlled, perfectly plastic calcula-
+tions for simple configurations (McClintock and Argon, 1966) show a nearly
+exponential dependence of the rate of void growth per unit of overall strain
+on the ratio of mean normal stress to yield stress. The role of strain hard-
+ening in slowing void growth and raising strains required for coalescence
+cannot presently be assessed, so that a direct step from this analysis to a
+crack extension criterion will require further work. Finite geometry changes
+at the crack tip also influence the deformation state in separation prone
+material. For example, analyses in the perfectly plastic case do not lead to
+large strains directly ahead of the crack unless progressive blunting of the
+tip is considered (Rice, 1967c). Another complicating feature is the distinc-
+tion which must be made between strain increments due to load elevation and
+strain increments due to crack advance in incremental elastic-plastic materials
+(McClintock and Irwin, 1965). Ductile metals exhibit at least a limited amount
+of stable crack extension prior to catastrophic fracture. The pertinent ques-
+tion in fracture mechanics is more one as to the prediction of final instability
+than to the prediction of the initiation of crack extension. While the adequate
+modelling of fracture remains remote, our present solution should be useful for
+the further understanding of the effects of yielding and hardening, providing
+other pertinent features of the problem are kept in mind.
+We have learned by private communication that Professor J. W. Hutchinson
+
+
+
+===== PAGE 17 =====
+14
+is conducting similar work on the structure of crack tip singularities, both
+in plane strain and plane stress, basing his approach on a direct computer
+assisted adaption of the Williams eigenvalue technique to the non-linear case.
+He too finds a 1/r variation of stress times strain for both deformation
+modes. Also, Professor J. L. Swedlow reports that a further analysis of exper-
+imentally determined plane stress crack tip deformation fields, with data
+obtained by Gerberich (1964), tends to support a 1/r dependence for the
+product of stress and strain near a crack tip. Grateful acknowledgement for
+support of this work is made to the Advanced Research Projects Agency
+(Contract SD-86 with Brown University), and to the National Science Founda ion
+(facilities grant GP-4825) for the support of computer time.
+
+
+
+===== PAGE 18 =====
+15
+References
+D. S. Dugdale (1960). "Yielding of Steel Sheets Containing Slits," J. Mech.
+Phys. Sol., vol. 8, pp. 100-104.
+W. W. Gerberich (1964). "Plastic Strains.and Energy Density in Cracked
+Plates: I. Experimental Techniques and Results," Exper. Mech., vol. 4,
+no. 11, pp. 335-344.
+R. Hill (1950). The Mathematical Theory of Plasticity, Clarendon Press, Oxford.
+J. A. Hult and F. A. McClintock (1956). "Elastic-Plastic Stress and Strain
+Distributions Around Sharp Notches Under Repeated Shear," Proc. Ninth
+Intl. Congr. Appl. Mech., Brussels, vol. 8, pp. 51-58.
+G. R. Irwin (1960). "Fracture Mechanics," in Structural Mechanics (eds.
+Goodier and Hoff), Pergamon Press, New York, pp. 557-591.
+F. A. McClintock and A. S. Argon (1966). Mechanical Behavior of Materials,
+(Chap. 16, Ductile Fracture), Addison Wesley, Reading, Mass.
+F. A. McClintock and G. R. Irwin (1965). "Plasticity Aspects of Fracture
+Mechanics," in Symp. on Fracture Toughness, Amer. Soc. Test. Mat'ls.,
+STP-381, pp. 84-113.
+H. Neuber (1961). "Theory of Stress Concentration for Shear Strained
+Prismatical Bodies with Arbitrary Non-Linear Stress Strain Law,"
+Jour. App,. Mech., vol. 28, pp. 544-550.
+J. R. Rice (1967a). "Stresses Due to a Sharp Notch in a Work Hardening
+Elastic-Plastic Material Loaded by Longitudinal Shear," Jour. Appl.
+Mech., vol. 34, pp. 287-298.
+(1967b). "The Mechanics of Crack Tip Deformation and Extension
+by Fatigue," in Symp. on Fatigue Crack Growth, (to appear, 1967),
+Amer. Soc. Test. Mat'ils., STP-415.
+(1967c). "A Path Independent Integral and the Approximate Analysis
+of Strain Concentration by Notches and Cracks," Brown Univ. ARPA SD-86
+Report E39.
+M. L. Williams (1957). "On the Stress Distribution at the Base of a Stationary
+Crack," Jour. Appl. Mech., vol. 24, pp. 109-114.
+jb
+
+
+
+===== PAGE 19 =====
+Y n
+r
+x
+FIG. 1. COORDINATES FOR DESCRIPTION OF CRACK TIP DEFORMATION FIELD, AND
+TYPICAL CONTOUR r FOR EVALUATION OF PATH INDEPENDENT LINE
+INTEGRAL.
+ST/To /N=I
+/-- 0.99
+2.0 - 0.5
+k'-N =0. 3
+15 -0.2
+1.5 -0.1
+0.05
+0.01
+1.0 - 0
+0T/To= Xyo FOR y < )Ko
+0.5 -T/T°=(/o)NFOR y > X0
+0 I
+0 2 4 6 8 10
+FIG. 2. POWER HARDENING LAW.
+
+
+
+===== PAGE 20 =====
+N = 0.005
+0.01
+0.05 900
+0.1
+0.2
+0.3
+,0.o.99 0,?o..6O
+00
+00o Yoro~R (8)/J
+00
+00
+1800 CRACK __ = 0
+FIG. 3. APPROXIMATE LOCATION OF ELASTIC-PLASTIC BOUNDARY AND
+GEOMETRICAL SHAPE OF CONSTANT EQUIVALENT SHEAR LINES
+VERY NEAR THE CRACK TIP.
+
+
+
+===== PAGE 21 =====
+0S! II0
+CCb
+0 ( 0 / --7O  "z
+0o 0C
+0
+tt
+z 0
+o4:
+OD!
+
+
+
+===== PAGE 22 =====
+yo To R (0)/J YoToRmox /
+y, TOR (7T)/J
+0.3
+0o ToRm ax /J
+0.010 0.2
+2 7r(N 1)
+"Yo To R (7/-)/J
+0.005 0.1
+y "TR (0)/J
+0 1 N
+0 0.5 1.0
+FIG. 5. DISTANCE FROM CRACK TIP TO APPROXIMATE ELASTIC-PLASTIC BOUNDARY
+IN FRONT OF AND BEHIND THE CRACK, AS WELL AS MAXIMUM DISTANCE
+FROM CRACK TIP TO BOUNDARY.
+
+
+
+===== PAGE 23 =====
+P/T
+12
+1,0.99 10
+0.3
+0.2
+0.05 8
+0.005 __
+6
+oI + 7T
+N =0,0.005
+2
+I I I I0
+00 180 140 100 60 20 0
+FIG. 6. VARIATION OF pIT (aO+ rr)/(2T) WITH 0.
+
+
+
+===== PAGE 24 =====
+15 - 1=
+10
+5
+7T
+0 1 I N
+0 0.2 0.4 0.6
+FIG. 7. MAXIMUM NORMAL STRESS TO EQUIVALENT STRESS
+FOR e = 0, a 0 /2T1 0 , versus N.
+N =0. 5 0.3 0.2 0.1 0.05 0.01 0.005, 0.I =, 1
++I +
+U ro /J
+UeTo/
+oTr(W)J I II I I I-- I I II I I I I I I I
+0.008 0.006 0.004 0.002 0
+FIG. 8. SHAPE OF DEFORMED CRACK SURFACES IN THE PLASTIC REGION. An arrow
+in the figure indicates the displacements at the elastic-plastic
+boundary behind the crack tip as well as the direction of the dis-
+placements at the crack in the plastic region. The scale at
+bottom of figure shows the nondimensional distance from the crack
+tip to the elastic-plastic boundary behind the crack.
+
+
+
+===== PAGE 25 =====
+Ca0
+N= 0,0.005 140
+0.1
+0.3
+0.5
+1,0.99
+100
+80
+60
+Ip 40
+20
+I II I I I I I I 0
+00 180 140 100 60 20 0
+FIG. 9. MAXIMUM SHEAR DIRECTIONS.
