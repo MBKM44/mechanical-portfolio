@@ -1,11 +1,14 @@
 import "@google/model-viewer";
 import "./styles.css";
-import { projects, skills, type Project } from "./content/projects";
+import { fluidPowerFilters, fluidPowerStudies, type FluidPowerStudy } from "./content/fluidPower";
+import { projects, skills, type Project, type ProjectVariant } from "./content/projects";
 
 type ModelViewerElement = HTMLElement & {
   cameraOrbit?: string;
   jumpCameraToGoal?: () => void;
 };
+
+type ViewerModel = Pick<Project, "modelFile" | "cameraOrbit" | "viewerAlt">;
 
 const app = document.querySelector<HTMLDivElement>("#app");
 
@@ -32,23 +35,23 @@ const renderMetricCards = (project: Project) =>
     )
     .join("");
 
-const renderModelViewer = (project: Project, compact = false) => `
+const renderModelViewer = (model: ViewerModel, compact = false) => `
   <div class="viewer-shell ${compact ? "viewer-shell--compact" : ""}" data-viewer-shell>
     <model-viewer
-      src="${assetUrl(project.modelFile)}"
-      alt="${project.viewerAlt}"
+      src="${assetUrl(model.modelFile)}"
+      alt="${model.viewerAlt}"
       camera-controls
       touch-action="pan-y"
       auto-rotate
       auto-rotate-delay="2600"
       shadow-intensity="0.8"
       exposure="0.92"
-      camera-orbit="${compact ? "-35deg 64deg 150%" : project.cameraOrbit}"
+      camera-orbit="${compact ? "-35deg 64deg 150%" : model.cameraOrbit}"
       min-camera-orbit="auto auto 70%"
       max-camera-orbit="auto auto 520%"
       loading="lazy"
       reveal="auto"
-      data-camera-orbit="${compact ? "-35deg 64deg 150%" : project.cameraOrbit}"
+      data-camera-orbit="${compact ? "-35deg 64deg 150%" : model.cameraOrbit}"
     ></model-viewer>
     <div class="viewer-placeholder" aria-live="polite">
       <strong>3D model coming soon</strong>
@@ -57,6 +60,32 @@ const renderModelViewer = (project: Project, compact = false) => `
     <div class="viewer-status" aria-live="polite">Loading GLB</div>
   </div>
 `;
+
+const renderProjectVariant = (variant: ProjectVariant) => `
+  <article class="configuration-card" id="${variant.id}">
+    <div class="configuration-card__header">
+      <span>${variant.label}</span>
+      <h3>${variant.title}</h3>
+      <p>${variant.summary}</p>
+      <div class="configuration-card__meta">
+        ${renderPills(variant.metrics)}
+      </div>
+    </div>
+    ${renderModelViewer(variant)}
+  </article>
+`;
+
+const renderProjectViewerArea = (project: Project) => {
+  if (!project.variants?.length) {
+    return renderModelViewer(project);
+  }
+
+  return `
+    <div class="configuration-stack" aria-label="${project.title} configurations">
+      ${project.variants.map(renderProjectVariant).join("")}
+    </div>
+  `;
+};
 
 const renderProjectCard = (project: Project) => `
   <a class="project-card" href="#${project.id}">
@@ -96,7 +125,7 @@ const renderProjectDetail = (project: Project, index: number) => `
       </div>
 
       <div class="project-media">
-        ${renderModelViewer(project)}
+        ${renderProjectViewerArea(project)}
       </div>
     </div>
 
@@ -113,6 +142,26 @@ const renderProjectDetail = (project: Project, index: number) => `
   </section>
 `;
 
+const renderFluidPowerCard = (study: FluidPowerStudy) => `
+  <button
+    class="fluid-card"
+    type="button"
+    data-fluid-card
+    data-study-id="${study.id}"
+    data-tags="${study.tags.join("|")}"
+    aria-label="Open ${study.title}"
+  >
+    <span class="fluid-card__media">
+      <img src="${assetUrl(study.mediaFile)}" alt="${study.title} FluidSIM preview" loading="lazy" decoding="async" />
+    </span>
+    <span class="fluid-card__body">
+      <span class="fluid-card__meta">${study.category} | ${study.sequence}</span>
+      <strong>${study.title}</strong>
+      <span>${study.description}</span>
+    </span>
+  </button>
+`;
+
 app.innerHTML = `
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Mubarak Al Hamadi portfolio home">
@@ -122,6 +171,7 @@ app.innerHTML = `
     <nav aria-label="Main navigation">
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
+      <a href="#fluid-power">Fluid Power</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -137,9 +187,9 @@ app.innerHTML = `
         <p class="eyebrow">Mechanical Engineer | CAD, Prototyping, Simulation, Mechatronics</p>
         <h1 id="hero-title">Mubarak Al Hamadi</h1>
         <p>
-          Mechanical engineering portfolio focused on CAD assemblies, prototype thinking,
-          thermal systems, suspension design, mechatronics, testing, and practical
-          engineering documentation.
+          Mechanical engineering portfolio focused on CAD, practical design, thermal systems,
+          fluid power simulation, controls, testing, troubleshooting, and prototype development
+          for industry-facing engineering roles.
         </p>
         <div class="hero-actions">
           <a class="button button-primary" href="#projects">View projects</a>
@@ -152,18 +202,19 @@ app.innerHTML = `
       <div class="container about-grid">
         <div>
           <p class="eyebrow">About</p>
-          <h2>Prototype-minded mechanical engineer with research and service experience.</h2>
+          <h2>Mechanical engineer focused on practical design, simulation, testing, and technical operations.</h2>
         </div>
         <div class="about-copy">
           <p>
             I am a Mechanical Engineering graduate and MSc student at Abu Dhabi University,
-            with hands-on exposure to industrial compressors, vapor-compression refrigeration,
-            sensor-based monitoring, experimental data analysis, and multidisciplinary R&D.
+            with hands-on exposure to industrial compressors, CAD assemblies, fluid power
+            circuits, vapor-compression refrigeration, sensor-based monitoring, and experimental
+            data analysis.
           </p>
           <p>
-            My strongest projects combine mechanical design with practical validation: CAD
-            assemblies, airflow and structural thinking, electronics integration, testing,
-            troubleshooting, documentation, and presentation-ready engineering communication.
+            My strongest work combines mechanical design with practical validation: airflow
+            and structural thinking, controls integration, simulation, maintenance-style
+            troubleshooting, documentation, and clear engineering communication.
           </p>
         </div>
       </div>
@@ -174,12 +225,39 @@ app.innerHTML = `
         <p class="eyebrow">Selected work</p>
         <h2>Engineering projects with browser-based 3D model inspection.</h2>
         <p>
-          Four selected projects showing mechanical design, system iteration, prototype
-          validation, and interactive GLB model viewing without CAD software.
+          Five selected project areas showing mechanical design, system iteration, prototype
+          validation, CAD packaging, kinematics, and interactive GLB model viewing without CAD software.
         </p>
       </div>
       <div class="container project-card-grid">
         ${projects.map(renderProjectCard).join("")}
+      </div>
+    </section>
+
+    <section class="fluid-gallery section-pad" id="fluid-power" aria-labelledby="fluid-power-title">
+      <div class="container fluid-heading">
+        <div>
+          <p class="eyebrow">FluidSIM studies</p>
+          <h2 id="fluid-power-title">Fluid Power Simulation Gallery</h2>
+          <p>
+            Compact pneumatic and electro-pneumatic circuit studies showing actuator sequencing,
+            relay logic, timing, flow control, and simulation-based troubleshooting.
+          </p>
+        </div>
+        <div class="fluid-filter-group" role="group" aria-label="Filter FluidSIM studies">
+          ${fluidPowerFilters
+            .map(
+              (filter, index) => `
+                <button class="filter-button ${index === 0 ? "is-active" : ""}" type="button" data-fluid-filter="${filter}">
+                  ${filter}
+                </button>
+              `
+            )
+            .join("")}
+        </div>
+      </div>
+      <div class="container fluid-grid">
+        ${fluidPowerStudies.map(renderFluidPowerCard).join("")}
       </div>
     </section>
 
@@ -208,8 +286,8 @@ app.innerHTML = `
           </li>
           <li>
             <span>03</span>
-            <strong>V2 System</strong>
-            <p>Improved scale, serviceability, airflow distribution, and research capacity.</p>
+            <strong>V2 Configurations</strong>
+            <p>Improved scale, serviceability, airflow distribution, research capacity, and compact packaging.</p>
           </li>
         </ol>
       </div>
@@ -220,7 +298,7 @@ app.innerHTML = `
     <section class="skills section-pad" id="skills">
       <div class="container section-heading">
         <p class="eyebrow">Skills and tools</p>
-        <h2>Mechanical design backed by analysis, build work, controls, and documentation.</h2>
+        <h2>Mechanical design backed by CAD, simulation, controls, testing, and documentation.</h2>
       </div>
       <div class="container skills-grid">
         ${skills
@@ -240,7 +318,7 @@ app.innerHTML = `
       <div class="container cv-layout">
         <div>
           <p class="eyebrow">CV</p>
-          <h2>Download the full CV for education, experience, publications, and training.</h2>
+          <h2>Download the full CV for education, industrial exposure, projects, publications, and training.</h2>
         </div>
         <a class="button button-primary" href="${assetUrl("cv/CV-Mubarak-Al-Hamadi.pdf")}" download>Download CV</a>
       </div>
@@ -250,7 +328,7 @@ app.innerHTML = `
       <div class="container contact-layout">
         <div>
           <p class="eyebrow">Contact</p>
-          <h2>Available for engineering roles, research projects, and technical collaborations.</h2>
+          <h2>Available for mechanical design, project engineering, testing, maintenance, automation, and technical operations roles.</h2>
         </div>
         <div class="contact-links">
           <a href="mailto:Mubarak.alhamadi22@gmail.com">Mubarak.alhamadi22@gmail.com</a>
@@ -267,6 +345,22 @@ app.innerHTML = `
       <span>Mechanical Engineering Portfolio</span>
     </div>
   </footer>
+
+  <div class="lightbox" data-fluid-lightbox hidden>
+    <button class="lightbox__backdrop" type="button" data-lightbox-close aria-label="Close FluidSIM preview"></button>
+    <section class="lightbox__panel" role="dialog" aria-modal="true" aria-labelledby="lightbox-title">
+      <button class="lightbox__close" type="button" data-lightbox-close aria-label="Close FluidSIM preview">Close</button>
+      <div class="lightbox__media">
+        <img data-lightbox-image alt="" />
+      </div>
+      <div class="lightbox__copy">
+        <p class="eyebrow" data-lightbox-category></p>
+        <h2 id="lightbox-title" data-lightbox-title></h2>
+        <p class="lightbox__sequence" data-lightbox-sequence></p>
+        <p data-lightbox-description></p>
+      </div>
+    </section>
+  </div>
 `;
 
 const bindModelViewers = () => {
@@ -306,5 +400,66 @@ const bindSmoothScroll = () => {
   });
 };
 
+const bindFluidPowerGallery = () => {
+  const cards = Array.from(document.querySelectorAll<HTMLButtonElement>("[data-fluid-card]"));
+  const filters = Array.from(document.querySelectorAll<HTMLButtonElement>("[data-fluid-filter]"));
+  const lightbox = document.querySelector<HTMLElement>("[data-fluid-lightbox]");
+  const lightboxImage = document.querySelector<HTMLImageElement>("[data-lightbox-image]");
+  const lightboxCategory = document.querySelector<HTMLElement>("[data-lightbox-category]");
+  const lightboxTitle = document.querySelector<HTMLElement>("[data-lightbox-title]");
+  const lightboxSequence = document.querySelector<HTMLElement>("[data-lightbox-sequence]");
+  const lightboxDescription = document.querySelector<HTMLElement>("[data-lightbox-description]");
+  const closeButtons = Array.from(document.querySelectorAll<HTMLButtonElement>("[data-lightbox-close]"));
+
+  filters.forEach((filterButton) => {
+    filterButton.addEventListener("click", () => {
+      const activeFilter = filterButton.dataset.fluidFilter ?? "All";
+
+      filters.forEach((button) => button.classList.toggle("is-active", button === filterButton));
+      cards.forEach((card) => {
+        const tags = card.dataset.tags?.split("|") ?? [];
+        const isVisible = activeFilter === "All" || tags.includes(activeFilter);
+        card.hidden = !isVisible;
+      });
+    });
+  });
+
+  cards.forEach((card) => {
+    card.addEventListener("click", () => {
+      const study = fluidPowerStudies.find((item) => item.id === card.dataset.studyId);
+      if (!study || !lightbox || !lightboxImage || !lightboxCategory || !lightboxTitle || !lightboxSequence || !lightboxDescription) {
+        return;
+      }
+
+      lightboxImage.src = assetUrl(study.mediaFile);
+      lightboxImage.alt = `${study.title} FluidSIM simulation`;
+      lightboxCategory.textContent = study.category;
+      lightboxTitle.textContent = study.title;
+      lightboxSequence.textContent = `Sequence: ${study.sequence}`;
+      lightboxDescription.textContent = study.description;
+      lightbox.hidden = false;
+      document.body.classList.add("has-lightbox");
+    });
+  });
+
+  const closeLightbox = () => {
+    if (!lightbox || !lightboxImage) {
+      return;
+    }
+
+    lightbox.hidden = true;
+    lightboxImage.removeAttribute("src");
+    document.body.classList.remove("has-lightbox");
+  };
+
+  closeButtons.forEach((button) => button.addEventListener("click", closeLightbox));
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeLightbox();
+    }
+  });
+};
+
 bindModelViewers();
 bindSmoothScroll();
+bindFluidPowerGallery();

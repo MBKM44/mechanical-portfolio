@@ -7,9 +7,11 @@ The site is a static Vite + TypeScript portfolio using `<model-viewer>` for brow
 ## Included Projects
 
 - Atmospheric Water Harvesting Prototype V1 - early low-scale proof-of-concept
-- Atmospheric Water Harvesting System V2 - improved and higher-scale AWH design
+- Atmospheric Water Harvesting System V2 - modular and compact higher-scale configurations
 - 6-DOF Exoskeleton - mechanical/mechatronics rehabilitation prototype
 - Suspension Design - front double-wishbone suspension CAD assembly
+- 5-DOF Robotic Arm Assembly - educational kinematics assembly/model
+- Fluid Power Simulation Gallery - compact FluidSIM pneumatic/electro-pneumatic circuit studies
 
 Oil Palm Rover is intentionally not included yet because no web-ready CAD/GLB is currently available for it.
 
@@ -20,14 +22,20 @@ public/
   cv/
     CV-Mubarak-Al-Hamadi.pdf
   media/
+    fluid-power/
+      pneumatics/
+        FluidSIM GIF previews
     Put future optional renders or images here
   models/
     old-awh-system.glb
     new-awh-system.glb
+    compact-awh-system.glb
     exoskeleton.glb
     suspension-design.glb
+    robotic-arm-assembly.glb
 src/
   content/
+    fluidPower.ts
     projects.ts
   main.ts
   styles.css
@@ -75,8 +83,10 @@ The Vite config uses `base: "./"` so the site works on GitHub Pages project URLs
 ## Updating Content
 
 - Edit project copy, tools, metrics, and model paths in `src/content/projects.ts`.
+- Keep V2 Atmospheric Water Harvesting variants grouped under the V2 project data when adding future standard/compact configurations.
 - Replace public GLB files in `public/models/` using the existing filenames, or update the matching `modelFile` value.
 - Add future project renders or still images to `public/media/`.
+- Edit FluidSIM gallery captions, filters, and media paths in `src/content/fluidPower.ts`.
 - Replace the CV at `public/cv/CV-Mubarak-Al-Hamadi.pdf` when needed.
 
 ## 3D Viewer Notes

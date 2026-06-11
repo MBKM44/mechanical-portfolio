@@ -1,3 +1,14 @@
+export type ProjectVariant = {
+  id: string;
+  label: string;
+  title: string;
+  summary: string;
+  modelFile: string;
+  cameraOrbit: string;
+  viewerAlt: string;
+  metrics: string[];
+};
+
 export type Project = {
   id: string;
   title: string;
@@ -14,6 +25,7 @@ export type Project = {
   metrics: string[];
   contributions: string[];
   tools: string[];
+  variants?: ProjectVariant[];
 };
 
 export const projects: Project[] = [
@@ -55,25 +67,50 @@ export const projects: Project[] = [
     modelFile: "models/new-awh-system.glb",
     cameraOrbit: "-35deg 64deg 230%",
     summary:
-      "Upscaled AWH system that improved the V1 concept for stronger airflow control, component access, experimental stability, and yield evaluation.",
+      "Improved atmospheric water harvesting system developed in modular and compact configurations for stronger airflow control, service access, test stability, and yield evaluation.",
     role:
-      "Advanced the design toward higher-capacity operation, supported troubleshooting, analyzed yield and energy performance, and contributed to research documentation.",
+      "Advanced the design toward higher-capacity operation, supported troubleshooting, reviewed compact packaging options, analyzed yield and energy performance, and prepared clear technical documentation.",
     problem:
       "The system needed to generate useful water in difficult UAE conditions while remaining testable, serviceable, and clear enough for repeated experimental evaluation.",
     result:
-      "Validated a working research prototype: up to 11.33 L/day in VCR-only mode at 0.94 kWh/L, and 13.67 L/day with VCR plus TEC. MOF-assisted operation improved dry-condition resilience.",
+      "Validated a working V2 concept with modular space for research components and a compact package for smaller-footprint deployment. Testing reached up to 11.33 L/day in VCR-only mode and 13.67 L/day with VCR plus TEC.",
     viewerAlt: "3D model of atmospheric water harvesting system V2",
     metrics: [
+      "Modular and compact configurations",
       "11.33 L/day VCR-only result",
-      "13.67 L/day with VCR plus TEC",
-      "MOF-assisted dry-condition resilience"
+      "13.67 L/day with VCR plus TEC"
     ],
     contributions: [
       "Upscaled enclosure and airflow concept development",
+      "Compact package review using the same core system concept",
       "Sensor-driven performance analysis and data logging",
-      "Technical reports, posters, proposals, and research documentation"
+      "Technical reports, posters, proposals, and project documentation"
     ],
-    tools: ["Autodesk Inventor", "ANSYS Fluent", "Fusion 360", "Arduino", "Temperature/RH sensors"]
+    tools: ["Autodesk Inventor", "ANSYS Fluent", "Fusion 360", "Arduino", "Temperature/RH sensors"],
+    variants: [
+      {
+        id: "awh-v2-modular",
+        label: "Modular",
+        title: "Modular Configuration",
+        summary:
+          "Longer research-focused package with additional internal space for sorbent beds, evaporator pads, alternate airflow paths, sensors, and future experimental modules.",
+        modelFile: "models/new-awh-system.glb",
+        cameraOrbit: "-35deg 64deg 230%",
+        viewerAlt: "3D model of the modular atmospheric water harvesting system V2 configuration",
+        metrics: ["More internal module space", "Research-friendly service access", "Flexible test configuration"]
+      },
+      {
+        id: "awh-v2-compact",
+        label: "Compact",
+        title: "Compact Configuration",
+        summary:
+          "Small-footprint version using the same core atmospheric water harvesting concept with tighter component packaging for improved space efficiency and easier deployment.",
+        modelFile: "models/compact-awh-system.glb",
+        cameraOrbit: "-30deg 64deg 230%",
+        viewerAlt: "3D model of the compact atmospheric water harvesting system V2 configuration",
+        metrics: ["Smaller footprint", "Same core system concept", "Deployment-oriented packaging"]
+      }
+    ]
   },
   {
     id: "exoskeleton",
@@ -124,17 +161,50 @@ export const projects: Project[] = [
       "Compact assembly layout for portfolio visualization"
     ],
     tools: ["Autodesk Inventor", "CAD assembly constraints", "3D part modeling", "Coil feature modeling", "Exploded-view preparation"]
+  },
+  {
+    id: "robotic-arm-assembly",
+    title: "5-DOF Robotic Arm Assembly",
+    shortTitle: "Robotic Arm Assembly",
+    phase: "Kinematics course assembly",
+    year: "Educational mechanism project",
+    modelFile: "models/robotic-arm-assembly.glb",
+    cameraOrbit: "32deg 68deg 235%",
+    summary:
+      "Educational robotic arm assembly focused on joint arrangement, link motion, workspace understanding, and end-effector positioning concepts.",
+    role:
+      "Supported the assembly and configuration, reviewed the joint layout and motion sequence, and connected the mechanical structure to degrees of freedom and link-joint behavior.",
+    problem:
+      "Robotic arms require coordinated joint motion to position an end effector accurately. The project focused on how multiple revolute joints combine to create useful motion and workspace coverage.",
+    result:
+      "Completed a kinematics-focused assembly/model suitable for demonstrating robotic arm joint sequencing, mechanism behavior, and mechanical motion principles.",
+    viewerAlt: "3D model of an educational robotic arm assembly",
+    metrics: ["Approximately 5-DOF excluding gripper", "Link-joint motion study", "Kinematics-focused assembly"],
+    contributions: [
+      "Assembly and joint layout review",
+      "Motion sequence and workspace interpretation",
+      "CAD/model review for mechanism behavior"
+    ],
+    tools: ["Robotic arm assembly", "Kinematics", "Degrees of freedom", "Link-joint motion", "CAD/model review"]
   }
 ];
 
 export const skills = [
   {
     group: "CAD and Simulation",
-    items: ["Autodesk Inventor", "Fusion 360", "AutoCAD", "ANSYS", "CFD/Fluent", "COMSOL", "ADAMS"]
+    items: ["Autodesk Inventor", "Fusion 360", "AutoCAD", "ANSYS", "CFD/Fluent", "FluidSIM", "COMSOL", "ADAMS"]
   },
   {
     group: "Mechanical Design",
-    items: ["Thermal systems", "Airflow packaging", "Suspension layout", "Vehicle dynamics basics", "Machine design"]
+    items: [
+      "Thermal systems",
+      "Airflow packaging",
+      "Suspension layout",
+      "Robotic arm assembly",
+      "Pneumatics",
+      "Vehicle dynamics basics",
+      "Machine design"
+    ]
   },
   {
     group: "Prototype and Testing",
@@ -142,6 +212,6 @@ export const skills = [
   },
   {
     group: "Controls and Communication",
-    items: ["Arduino", "IMU sensors", "MATLAB/Simulink", "Research writing", "Technical documentation", "Arabic and English"]
+    items: ["Arduino", "IMU sensors", "MATLAB/Simulink", "Relay logic", "Kinematics", "Technical documentation", "Arabic and English"]
   }
 ];
