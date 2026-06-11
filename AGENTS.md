@@ -29,7 +29,7 @@ Avoid adding a large framework unless the site grows beyond a single-page portfo
 - Do not add empty video slots or placeholder media blocks after project viewers.
 - Keep Oil Palm Rover out of the visible project list until a web-ready model or strong visual asset exists.
 - Preserve the AWH relationship:
-  - Atmospheric Water Harvesting Prototype V1 = early low-scale proof-of-concept
+  - Atmospheric Water Harvesting Prototype V1 = early low-scale initial design iteration
   - Atmospheric Water Harvesting System V2 = improved higher-scale design with modular and compact configurations
   - Do not make V1 sound failed or disposable.
 - Keep the Robotic Arm Assembly wording conservative unless new documentation supports stronger claims. "Approximately 5-DOF excluding gripper" is based on current project context, not a formal DOF audit.

@@ -6,12 +6,12 @@ The site is a static Vite + TypeScript portfolio using `<model-viewer>` for brow
 
 ## Included Projects
 
-- Atmospheric Water Harvesting Prototype V1 - early low-scale proof-of-concept
+- Atmospheric Water Harvesting Prototype V1 - early low-scale initial design iteration
 - Atmospheric Water Harvesting System V2 - modular and compact higher-scale configurations
 - 6-DOF Exoskeleton - mechanical/mechatronics rehabilitation prototype
 - Suspension Design - front double-wishbone suspension CAD assembly
 - 5-DOF Robotic Arm Assembly - educational kinematics assembly/model
-- Fluid Power Simulation Gallery - compact FluidSIM pneumatic/electro-pneumatic circuit studies
+- Fluid Power Simulation Library - compact FluidSIM pneumatic/electro-pneumatic circuit studies
 
 Oil Palm Rover is intentionally not included yet because no web-ready CAD/GLB is currently available for it.
 

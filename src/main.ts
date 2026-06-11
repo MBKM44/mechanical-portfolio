@@ -234,38 +234,11 @@ app.innerHTML = `
       </div>
     </section>
 
-    <section class="fluid-gallery section-pad" id="fluid-power" aria-labelledby="fluid-power-title">
-      <div class="container fluid-heading">
-        <div>
-          <p class="eyebrow">FluidSIM studies</p>
-          <h2 id="fluid-power-title">Fluid Power Simulation Gallery</h2>
-          <p>
-            Compact pneumatic and electro-pneumatic circuit studies showing actuator sequencing,
-            relay logic, timing, flow control, and simulation-based troubleshooting.
-          </p>
-        </div>
-        <div class="fluid-filter-group" role="group" aria-label="Filter FluidSIM studies">
-          ${fluidPowerFilters
-            .map(
-              (filter, index) => `
-                <button class="filter-button ${index === 0 ? "is-active" : ""}" type="button" data-fluid-filter="${filter}">
-                  ${filter}
-                </button>
-              `
-            )
-            .join("")}
-        </div>
-      </div>
-      <div class="container fluid-grid">
-        ${fluidPowerStudies.map(renderFluidPowerCard).join("")}
-      </div>
-    </section>
-
     <section class="progression section-pad" aria-labelledby="progression-title">
       <div class="container progression-layout">
         <div>
           <p class="eyebrow">Design progression</p>
-          <h2 id="progression-title">Atmospheric water harvesting, from V1 proof-of-concept to V2 system design.</h2>
+          <h2 id="progression-title">Atmospheric water harvesting, from first-generation prototype to V2 system design.</h2>
           <p>
             Atmospheric water harvesting extracts water from humid air. In hot, arid
             environments, low humidity and high temperature make condensation harder, so the
@@ -294,6 +267,33 @@ app.innerHTML = `
     </section>
 
     ${projects.map(renderProjectDetail).join("")}
+
+    <section class="fluid-gallery section-pad" id="fluid-power" aria-labelledby="fluid-power-title">
+      <div class="container fluid-heading">
+        <div>
+          <p class="eyebrow">FluidSIM studies</p>
+          <h2 id="fluid-power-title">Fluid Power Simulation Library</h2>
+          <p>
+            Compact pneumatic and electro-pneumatic circuit studies showing actuator sequencing,
+            relay logic, timing, flow control, and simulation-based troubleshooting.
+          </p>
+        </div>
+        <div class="fluid-filter-group" role="group" aria-label="Filter FluidSIM studies">
+          ${fluidPowerFilters
+            .map(
+              (filter, index) => `
+                <button class="filter-button ${index === 0 ? "is-active" : ""}" type="button" data-fluid-filter="${filter}">
+                  ${filter}
+                </button>
+              `
+            )
+            .join("")}
+        </div>
+      </div>
+      <div class="container fluid-grid">
+        ${fluidPowerStudies.map(renderFluidPowerCard).join("")}
+      </div>
+    </section>
 
     <section class="skills section-pad" id="skills">
       <div class="container section-heading">
@@ -333,7 +333,6 @@ app.innerHTML = `
         <div class="contact-links">
           <a href="mailto:Mubarak.alhamadi22@gmail.com">Mubarak.alhamadi22@gmail.com</a>
           <a href="https://www.linkedin.com/in/mubarak-al-hamadi" target="_blank" rel="noreferrer">LinkedIn profile</a>
-          <span>GitHub Pages link to be added after publishing</span>
         </div>
       </div>
     </section>
@@ -358,6 +357,7 @@ app.innerHTML = `
         <h2 id="lightbox-title" data-lightbox-title></h2>
         <p class="lightbox__sequence" data-lightbox-sequence></p>
         <p data-lightbox-description></p>
+        <a class="lightbox__fullsize" data-lightbox-fullsize target="_blank" rel="noreferrer">Open full size</a>
       </div>
     </section>
   </div>
@@ -409,6 +409,7 @@ const bindFluidPowerGallery = () => {
   const lightboxTitle = document.querySelector<HTMLElement>("[data-lightbox-title]");
   const lightboxSequence = document.querySelector<HTMLElement>("[data-lightbox-sequence]");
   const lightboxDescription = document.querySelector<HTMLElement>("[data-lightbox-description]");
+  const lightboxFullsize = document.querySelector<HTMLAnchorElement>("[data-lightbox-fullsize]");
   const closeButtons = Array.from(document.querySelectorAll<HTMLButtonElement>("[data-lightbox-close]"));
 
   filters.forEach((filterButton) => {
@@ -427,16 +428,27 @@ const bindFluidPowerGallery = () => {
   cards.forEach((card) => {
     card.addEventListener("click", () => {
       const study = fluidPowerStudies.find((item) => item.id === card.dataset.studyId);
-      if (!study || !lightbox || !lightboxImage || !lightboxCategory || !lightboxTitle || !lightboxSequence || !lightboxDescription) {
+      if (
+        !study ||
+        !lightbox ||
+        !lightboxImage ||
+        !lightboxCategory ||
+        !lightboxTitle ||
+        !lightboxSequence ||
+        !lightboxDescription ||
+        !lightboxFullsize
+      ) {
         return;
       }
 
-      lightboxImage.src = assetUrl(study.mediaFile);
+      const mediaUrl = assetUrl(study.mediaFile);
+      lightboxImage.src = mediaUrl;
       lightboxImage.alt = `${study.title} FluidSIM simulation`;
       lightboxCategory.textContent = study.category;
       lightboxTitle.textContent = study.title;
       lightboxSequence.textContent = `Sequence: ${study.sequence}`;
       lightboxDescription.textContent = study.description;
+      lightboxFullsize.href = mediaUrl;
       lightbox.hidden = false;
       document.body.classList.add("has-lightbox");
     });

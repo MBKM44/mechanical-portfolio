@@ -33,7 +33,7 @@ export const projects: Project[] = [
     id: "awh-v1",
     title: "Atmospheric Water Harvesting Prototype V1",
     shortTitle: "Atmospheric Water Harvesting V1",
-    phase: "Proof-of-concept thermal prototype",
+    phase: "First-generation thermal prototype",
     year: "First design iteration",
     modelFile: "models/old-awh-system.glb",
     cameraOrbit: "35deg 68deg 210%",
@@ -44,11 +44,11 @@ export const projects: Project[] = [
     problem:
       "Atmospheric water harvesting extracts water from air, but hot and arid conditions reduce condensation efficiency. V1 tested whether cooling, moisture capture, and sensing could work together in a compact prototype.",
     result:
-      "Established the baseline package and revealed practical improvement areas: airflow path clarity, service access, wiring robustness, sensor logging, and higher-capacity packaging.",
+      "Established the baseline package, recorded testing up to 13.67 L/day with VCR plus TEC, and revealed improvement areas in airflow clarity, service access, wiring robustness, and sensor logging.",
     viewerAlt: "3D model of atmospheric water harvesting prototype V1",
     metrics: [
-      "Low-scale proof-of-concept",
-      "Cooling, sorbent, TEC, and sensor integration",
+      "Initial low-scale prototype",
+      "13.67 L/day with VCR plus TEC",
       "Baseline for V2 design decisions"
     ],
     contributions: [
@@ -69,16 +69,16 @@ export const projects: Project[] = [
     summary:
       "Improved atmospheric water harvesting system developed in modular and compact configurations for stronger airflow control, service access, test stability, and yield evaluation.",
     role:
-      "Advanced the design toward higher-capacity operation, supported troubleshooting, reviewed compact packaging options, analyzed yield and energy performance, and prepared clear technical documentation.",
+      "Advanced the design toward higher-capacity operation, supported troubleshooting, reviewed compact packaging options, and prepared clear technical documentation for the improved system family.",
     problem:
       "The system needed to generate useful water in difficult UAE conditions while remaining testable, serviceable, and clear enough for repeated experimental evaluation.",
     result:
-      "Validated a working V2 concept with modular space for research components and a compact package for smaller-footprint deployment. Testing reached up to 11.33 L/day in VCR-only mode and 13.67 L/day with VCR plus TEC.",
+      "Developed an improved V2 design family with a modular package for research components and a compact package for smaller-footprint deployment, ready for further build, testing, and refinement.",
     viewerAlt: "3D model of atmospheric water harvesting system V2",
     metrics: [
       "Modular and compact configurations",
-      "11.33 L/day VCR-only result",
-      "13.67 L/day with VCR plus TEC"
+      "Improved packaging and service access",
+      "Prepared for future validation testing"
     ],
     contributions: [
       "Upscaled enclosure and airflow concept development",
