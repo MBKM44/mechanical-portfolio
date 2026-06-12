@@ -1,6 +1,12 @@
 import "@google/model-viewer";
 import "./styles.css";
 import { fluidPowerFilters, fluidPowerStudies, type FluidPowerStudy } from "./content/fluidPower";
+import {
+  actuationFeature,
+  mediaFilters,
+  mediaLibraryItems,
+  type MediaLibraryItem
+} from "./content/mediaLibrary";
 import { projects, skills, type Project, type ProjectVariant } from "./content/projects";
 
 type ModelViewerElement = HTMLElement & {
@@ -162,6 +168,90 @@ const renderFluidPowerCard = (study: FluidPowerStudy) => `
   </button>
 `;
 
+const renderActuationFeature = () => `
+  <section class="media-feature" aria-labelledby="actuation-feature-title">
+    <div class="media-feature__copy">
+      <p class="eyebrow">Mechatronics highlight</p>
+      <h3 id="actuation-feature-title">${actuationFeature.title}</h3>
+      <p>${actuationFeature.description}</p>
+      <div class="pill-row">${renderPills(actuationFeature.points)}</div>
+    </div>
+    <div class="media-feature__videos">
+      ${actuationFeature.videos
+        .map(
+          (video) => `
+            <article class="media-feature-video">
+              <video src="${assetUrl(video.source)}" controls muted playsinline preload="metadata"></video>
+              <span>${video.title}</span>
+            </article>
+          `
+        )
+        .join("")}
+    </div>
+  </section>
+`;
+
+const renderMediaPreview = (item: MediaLibraryItem) => {
+  if (item.kind === "youtube") {
+    if (!item.youtubeId) {
+      return `
+        <div class="media-card__fallback">
+          <span>YouTube video</span>
+          <a href="${item.externalUrl ?? item.source}" target="_blank" rel="noreferrer">Watch on YouTube</a>
+        </div>
+      `;
+    }
+
+    return `
+      <iframe
+        src="${item.source}"
+        title="${item.title}"
+        loading="lazy"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen
+      ></iframe>
+    `;
+  }
+
+  if (item.kind === "video") {
+    return `<video src="${assetUrl(item.source)}" controls muted playsinline preload="metadata"></video>`;
+  }
+
+  return `<img src="${assetUrl(item.source)}" alt="${item.title}" loading="lazy" decoding="async" />`;
+};
+
+const renderMediaActions = (item: MediaLibraryItem) => {
+  if (item.kind === "youtube") {
+    return `<a href="${item.externalUrl ?? item.source}" target="_blank" rel="noreferrer">Watch on YouTube</a>`;
+  }
+
+  return `
+    <button type="button" data-media-open data-media-id="${item.id}">
+      ${item.kind === "video" ? "Open larger" : "Enlarge image"}
+    </button>
+  `;
+};
+
+const renderMediaCard = (item: MediaLibraryItem) => `
+  <article
+    class="media-card media-card--${item.kind}"
+    data-media-card
+    data-tags="${item.tags.join("|")}"
+  >
+    <div class="media-card__preview">
+      ${renderMediaPreview(item)}
+    </div>
+    <div class="media-card__body">
+      <span>${item.cluster}</span>
+      <h3>${item.title}</h3>
+      <p>${item.description}</p>
+      <div class="media-card__actions">
+        ${renderMediaActions(item)}
+      </div>
+    </div>
+  </article>
+`;
+
 app.innerHTML = `
   <header class="site-header">
     <a class="brand" href="#top" aria-label="Mubarak Al Hamadi portfolio home">
@@ -172,6 +262,7 @@ app.innerHTML = `
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
       <a href="#fluid-power">Fluid Power</a>
+      <a href="#media-library">Media</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -295,6 +386,38 @@ app.innerHTML = `
       </div>
     </section>
 
+    <section class="media-library section-pad" id="media-library" aria-labelledby="media-library-title">
+      <div class="container media-heading">
+        <div>
+          <p class="eyebrow">Project media</p>
+          <h2 id="media-library-title">Engineering Media Library</h2>
+          <p>
+            Selected videos and images showing practical CAD work, prototype testing,
+            mechatronics integration, industrial exposure, and simulation support.
+          </p>
+        </div>
+        <div class="media-filter-group" role="group" aria-label="Filter engineering media">
+          ${mediaFilters
+            .map(
+              (filter, index) => `
+                <button class="filter-button ${index === 0 ? "is-active" : ""}" type="button" data-media-filter="${filter}">
+                  ${filter}
+                </button>
+              `
+            )
+            .join("")}
+        </div>
+      </div>
+
+      <div class="container">
+        ${renderActuationFeature()}
+      </div>
+
+      <div class="container media-grid">
+        ${mediaLibraryItems.map(renderMediaCard).join("")}
+      </div>
+    </section>
+
     <section class="skills section-pad" id="skills">
       <div class="container section-heading">
         <p class="eyebrow">Skills and tools</p>
@@ -358,6 +481,20 @@ app.innerHTML = `
         <p class="lightbox__sequence" data-lightbox-sequence></p>
         <p data-lightbox-description></p>
         <a class="lightbox__fullsize" data-lightbox-fullsize target="_blank" rel="noreferrer">Open full size</a>
+      </div>
+    </section>
+  </div>
+
+  <div class="media-lightbox" data-media-lightbox hidden>
+    <button class="media-lightbox__backdrop" type="button" data-media-close aria-label="Close media preview"></button>
+    <section class="media-lightbox__panel" role="dialog" aria-modal="true" aria-labelledby="media-lightbox-title">
+      <button class="media-lightbox__close" type="button" data-media-close aria-label="Close media preview">Close</button>
+      <div class="media-lightbox__stage" data-media-stage></div>
+      <div class="media-lightbox__copy">
+        <p class="eyebrow" data-media-cluster></p>
+        <h2 id="media-lightbox-title" data-media-title></h2>
+        <p data-media-description></p>
+        <a class="media-lightbox__fullsize" data-media-fullsize target="_blank" rel="noreferrer">Open full size</a>
       </div>
     </section>
   </div>
@@ -472,6 +609,85 @@ const bindFluidPowerGallery = () => {
   });
 };
 
+const bindMediaLibrary = () => {
+  const cards = Array.from(document.querySelectorAll<HTMLElement>("[data-media-card]"));
+  const filters = Array.from(document.querySelectorAll<HTMLButtonElement>("[data-media-filter]"));
+  const openButtons = Array.from(document.querySelectorAll<HTMLButtonElement>("[data-media-open]"));
+  const lightbox = document.querySelector<HTMLElement>("[data-media-lightbox]");
+  const stage = document.querySelector<HTMLElement>("[data-media-stage]");
+  const cluster = document.querySelector<HTMLElement>("[data-media-cluster]");
+  const title = document.querySelector<HTMLElement>("[data-media-title]");
+  const description = document.querySelector<HTMLElement>("[data-media-description]");
+  const fullsize = document.querySelector<HTMLAnchorElement>("[data-media-fullsize]");
+  const closeButtons = Array.from(document.querySelectorAll<HTMLButtonElement>("[data-media-close]"));
+
+  filters.forEach((filterButton) => {
+    filterButton.addEventListener("click", () => {
+      const activeFilter = filterButton.dataset.mediaFilter ?? "All";
+
+      filters.forEach((button) => button.classList.toggle("is-active", button === filterButton));
+      cards.forEach((card) => {
+        const tags = card.dataset.tags?.split("|") ?? [];
+        const isVisible = activeFilter === "All" || tags.includes(activeFilter);
+        card.hidden = !isVisible;
+      });
+    });
+  });
+
+  const closeMediaLightbox = () => {
+    if (!lightbox || !stage) {
+      return;
+    }
+
+    const activeVideo = stage.querySelector("video");
+    activeVideo?.pause();
+    stage.replaceChildren();
+    lightbox.hidden = true;
+    document.body.classList.remove("has-lightbox");
+  };
+
+  openButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const item = mediaLibraryItems.find((mediaItem) => mediaItem.id === button.dataset.mediaId);
+      if (!item || !lightbox || !stage || !cluster || !title || !description || !fullsize) {
+        return;
+      }
+
+      stage.replaceChildren();
+
+      if (item.kind === "video") {
+        const video = document.createElement("video");
+        video.src = assetUrl(item.source);
+        video.controls = true;
+        video.muted = true;
+        video.playsInline = true;
+        video.preload = "metadata";
+        stage.append(video);
+      } else {
+        const image = document.createElement("img");
+        image.src = assetUrl(item.source);
+        image.alt = item.title;
+        stage.append(image);
+      }
+
+      cluster.textContent = item.cluster;
+      title.textContent = item.title;
+      description.textContent = item.description;
+      fullsize.href = assetUrl(item.source);
+      lightbox.hidden = false;
+      document.body.classList.add("has-lightbox");
+    });
+  });
+
+  closeButtons.forEach((button) => button.addEventListener("click", closeMediaLightbox));
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeMediaLightbox();
+    }
+  });
+};
+
 bindModelViewers();
 bindSmoothScroll();
 bindFluidPowerGallery();
+bindMediaLibrary();

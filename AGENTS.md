@@ -12,6 +12,7 @@ Keep this as a professional, hiring-focused mechanical engineering portfolio. Th
 - Plain HTML rendering from `src/main.ts`
 - Project data in `src/content/projects.ts`
 - FluidSIM gallery data in `src/content/fluidPower.ts`
+- Engineering media library data in `src/content/mediaLibrary.ts`
 - Styling in `src/styles.css`
 - 3D models rendered with `@google/model-viewer`
 - GitHub Pages deployment through `.github/workflows/deploy.yml`
@@ -25,6 +26,7 @@ Avoid adding a large framework unless the site grows beyond a single-page portfo
 - Keep the CV in `public/cv/`.
 - Keep future optional renders/images in `public/media/`.
 - Keep public FluidSIM GIFs or image previews under `public/media/fluid-power/`.
+- Keep public project videos under `public/media/videos/` and public gallery images under `public/media/images/library/`.
 - Use the correct visible label "Pneumatics" even if the original source folder is misspelled as `Penumatics`.
 - Do not add empty video slots or placeholder media blocks after project viewers.
 - Keep Oil Palm Rover out of the visible project list until a web-ready model or strong visual asset exists.

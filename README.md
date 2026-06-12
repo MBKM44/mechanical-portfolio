@@ -12,6 +12,7 @@ The site is a static Vite + TypeScript portfolio using `<model-viewer>` for brow
 - Suspension Design - front double-wishbone suspension CAD assembly
 - 5-DOF Robotic Arm Assembly - educational kinematics assembly/model
 - Fluid Power Simulation Library - compact FluidSIM pneumatic/electro-pneumatic circuit studies
+- Engineering Media Library - YouTube videos, local MP4 demos, and clustered project images
 
 Oil Palm Rover is intentionally not included yet because no web-ready CAD/GLB is currently available for it.
 
@@ -25,6 +26,11 @@ public/
     fluid-power/
       pneumatics/
         FluidSIM GIF previews
+    images/
+      library/
+        Project image library
+    videos/
+      Local MP4 demonstrations
     Put future optional renders or images here
   models/
     old-awh-system.glb
@@ -36,6 +42,7 @@ public/
 src/
   content/
     fluidPower.ts
+    mediaLibrary.ts
     projects.ts
   main.ts
   styles.css
@@ -87,6 +94,7 @@ The Vite config uses `base: "./"` so the site works on GitHub Pages project URLs
 - Replace public GLB files in `public/models/` using the existing filenames, or update the matching `modelFile` value.
 - Add future project renders or still images to `public/media/`.
 - Edit FluidSIM gallery captions, filters, and media paths in `src/content/fluidPower.ts`.
+- Edit YouTube links, local video captions, and image gallery captions in `src/content/mediaLibrary.ts`.
 - Replace the CV at `public/cv/CV-Mubarak-Al-Hamadi.pdf` when needed.
 
 ## 3D Viewer Notes
